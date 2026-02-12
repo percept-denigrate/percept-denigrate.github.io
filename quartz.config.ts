@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "All I know",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -29,24 +29,24 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
+          light: "#eff1f5",     // base
+          lightgray: "#ccd0da", // surface 0
+          gray: "#9ca0b0",      // overlay 0
+          darkgray: "#5c5f77",  // subtext 1
+          dark: "#4c4f69",      // text
+          secondary: "#209fb5", // sapphire
+          tertiary: "#40a02b",  // green
           highlight: "rgba(143, 159, 169, 0.15)",
           textHighlight: "#fff23688",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
+          light: "#1e1e2e",     // base
+          lightgray: "#313244", // surface 0
+          gray: "#6c7086",      // overlay 0
+          darkgray: "#bac2de",  // subtext 1
+          dark: "#cdd6f4",      // text
+          secondary: "#74c7ec", // sapphire
+          tertiary: "#a6e3a1",  // green
           highlight: "rgba(143, 159, 169, 0.15)",
           textHighlight: "#b3aa0288",
         },
