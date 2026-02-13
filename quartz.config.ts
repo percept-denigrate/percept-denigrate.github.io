@@ -48,7 +48,7 @@ const config: QuartzConfig = {
           secondary: "#74c7ec", // sapphire
           tertiary: "#a6e3a1",  // green
           highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa02aa",
+          textHighlight: "#b3aa0288",
         },
       },
     },
