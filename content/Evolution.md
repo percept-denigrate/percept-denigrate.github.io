@@ -2,7 +2,7 @@ Biological evolution: *change* of *heritable* characteristics of populations ove
 
 > Nothing in evolution makes sense except in light of population genetics.
 > 
-> --Michael Lynch (2007)
+> —Michael Lynch (2007)
 
 Causes are:
 - [[Variation]]

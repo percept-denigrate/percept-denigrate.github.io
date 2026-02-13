@@ -1,4 +1,4 @@
-[[IQ]] has risen over the past century.[^1] Countries where the average IQ is 100 today had an IQ of 75 a century ago.[^2]
+[[IQ]] has risen over the past century, at rate rate of about 3 points per decade.[^1][^2] Countries where the average IQ is 100 today had an IQ of 75 a century ago.
 
 ![[flynn_effect.png]]
 
@@ -6,7 +6,7 @@ This highlights the large impact environment has on IQ. The most likely causes a
 
 But the Flynn effect is not on [[General intelligence]]: *g*-loaded items are less affected by the Flynn effect.[^3] This means that the Flynn effect and cognitive differences between countries have different causes, otherwise they would have similar loadings.
 
-The Flynn effect seems to have stalled in developed countries, with some observed cases of reversal.[^4][^5]
+The Flynn effect seems to have stalled in developed countries, with some observed but disputed cases of reversal.[^4][^5]
 
 [^1]: [Pietschnig & Voracek (2015), *One century of global IQ gains: a formal meta-analysis of the Flynn effect (1909-2013)*](https://pubmed.ncbi.nlm.nih.gov/25987509/)
 
