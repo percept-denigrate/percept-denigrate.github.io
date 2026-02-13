@@ -24,9 +24,13 @@ One model is considering all alleles are part the gene pool, and the next genera
 
 In that case:
 
-$$f(A) = \frac8{13} = 0.62$$
+$$
+f(A) = \frac8{13} = 0.62
+$$
 
-$$f(a) = \frac5{13} = 0.38$$
+$$
+f(a) = \frac5{13} = 0.38
+$$
 
 We can predict the genotype distribution of the next generation.
 
@@ -41,11 +45,17 @@ HWE assumptions represent the simplest possible case:
 
 Given these assumptions:
 
-$$f(AA) = f(A)f(A) = p^2= 0.38$$
+$$
+f(AA) = f(A)f(A) = p^2= 0.38
+$$
 
-$$f(aa) = f(a)f(a) = q^2= 0.14$$
+$$
+f(aa) = f(a)f(a) = q^2= 0.14
+$$
 
-$$f(Aa) = f(A) f(a) + f(a) f(A)=2pq= 0.47$$
+$$
+f(Aa) = f(A) f(a) + f(a) f(A)=2pq= 0.47
+$$
 
 This model gives the same results as calculating offspring genotype frequencies based on parents genotype.
 

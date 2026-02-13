@@ -16,29 +16,42 @@ This can lead to associations between alleles and environmentally driven phenoty
 # Disentangling these effects
 
 Assuming the influences of genes and environment are additive:
-$$P_i = \overline P + G_i + E_i$$
+
+$$
+P_i = \overline P + G_i + E_i
+$$
 
 The population mean $\overline P$ has variance:
 
-$$\sigma_p^2 = \sigma_g^2 + \sigma_e^2$$
+$$
+\sigma_p^2 = \sigma_g^2 + \sigma_e^2
+$$
 
 Evolution is fundamentally concerned with heritable variation $\sigma_g^2$, so we define [[Heritability]] as:
 
-$$H^2 = \frac{\sigma_g^2}{\sigma_p^2} = \frac{\sigma_g^2}{\sigma_e^2 + \sigma_p^2}$$
+$$
+H^2 = \frac{\sigma_g^2}{\sigma_p^2} = \frac{\sigma_g^2}{\sigma_e^2 + \sigma_p^2}
+$$
 
 ![[selection.png]]
 
 Selection differential: difference between the selected group and the population mean
 
-$$S = \overline P_S - \overline P_t$$
+$$
+S = \overline P_S - \overline P_t
+$$
 
 Response to selection: difference between the mean phenotype of progeny and the previous generation
 
-$$R = \overline {P_{t+1}} - \overline {P_t}$$
+$$
+R = \overline {P_{t+1}} - \overline {P_t}
+$$
 
 Expected response if thus:
 
-$$R = h^2 S$$
+$$
+R = h^2 S
+$$
 
 Where $h^2 = \frac{\sigma_a^2}{\sigma_p^2}$ is narrow-sense [[Heritability]].
 
@@ -62,11 +75,18 @@ Pairwise comparisons: summing the number of differences in each pair of individu
 
 Nucleotide diversity:
 
-$$\pi = \frac{\sum P_{\text{diff}}}{N_{\text{diff}} \frac{n(n-1)}2 + N_{\text{same}} \frac{n(n-1)}2}$$
+$$
+\pi = \frac{\sum P_{\text{diff}}}{N_{\text{diff}} \frac{n(n-1)}2 + N_{\text{same}} \frac{n(n-1)}2}
+$$
 
 For example:
- ![[variation.png]]
-$$\pi = 0.0158$$
+
+![[variation.png]]
+
+$$
+\pi = 0.0158
+$$
+
 Site frequency spectrum: stable populations have high number of singletons, very low numbers of high frequency alleles .
 
 Most new mutations are lost to drift in the first generation.

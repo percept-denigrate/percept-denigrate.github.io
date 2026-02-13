@@ -10,19 +10,27 @@ It doesn't change anything for homozygotes as their offspring are homozygotes to
 
 Often measured with the inbreeding coefficient. Given the theoritcal number of heterozygotes $H_0 = 2pq$ and the observed number of heterozygotes $H$:
 
-$$F = \frac{H_0 - H}{H_0}$$
+$$
+F = \frac{H_0 - H}{H_0}
+$$
 
 In the case of selfing, we lose half the heterozygotes in one generation, so:
 
-$$F = \frac{0.47 - 0.237}{0.47} = 0.5$$ 
+$$
+F = \frac{0.47 - 0.237}{0.47} = 0.5
+$$ 
 
 The reduction in heterozygosity due to inbreeding is:
 
-$$H = 2pq - 2pqF$$
+$$
+H = 2pq - 2pqF
+$$
 
 The contribution to homozygosity is:
 
-$$f(AA) =p^2+2pqF$$
+$$
+f(AA) =p^2+2pqF
+$$
 
 Non-random mating change genotype frequencies but not allele frequencies.
 
@@ -48,27 +56,43 @@ In reality it's hard to detect population structure. If we consider those two su
 
 The excess homozygosity is the variance in the allele frequency:
 
-$$\sigma^2=\frac{p_1^2+p_2^2}2-\overline p^2$$
+$$
+\sigma^2=\frac{p_1^2+p_2^2}2-\overline p^2
+$$
 
-$$\sigma^2=0.023$$
+$$
+\sigma^2=0.023
+$$
 
-$$f(AA)_T-f(\overline A)^2=0.027$$
+$$
+f(AA)_T-f(\overline A)^2=0.027
+$$
 
 The loss of homozygosity is thus:
 
-$$H_0 - H_E=-(\sigma_A^2+\sigma_a^2)$$
+$$
+H_0 - H_E=-(\sigma_A^2+\sigma_a^2)
+$$
 
-$$H_0 - H_E=-2\sigma^2$$
+$$
+H_0 - H_E=-2\sigma^2
+$$
 
 Like with inbreeding, $F_{ST}$ measures the deficiency of heterozygotes relative to expectation due to population structure:
 
-$$F_{ST} = \frac{H_E-H_0}{H_E}$$
+$$
+F_{ST} = \frac{H_E-H_0}{H_E}
+$$
 
-$$F_{ST} =0.09$$
+$$
+F_{ST} =0.09
+$$
 
 As $H_0-H_E=-2\sigma^2$:
 
-$$F_{ST}=\frac{\sigma^2}{\overline p\overline q}$$
+$$
+F_{ST}=\frac{\sigma^2}{\overline p\overline q}
+$$
 
 It is a direct measure of the amount of evolution that has occurred between two populations.
 
