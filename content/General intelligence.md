@@ -2,7 +2,7 @@ The general intelligence factor, *g* for short, is a latent variable that explai
 
 Its construction stems from the positive manifold—the fact that cognitive subtest results are positively correlated.
 
-![Correlation heatmap of various subtests](positive_manifold.png)
+![[positive_manifold.png|Correlation heatmap of various subtests]]
 
 It is constructed through [[Factor analysis]], often as the first unrotated factor. It is a population-level latent variable and is not directly measurable for individuals. It is however possible to construct [[IQ]] tests that are heavily *g*-loaded, with correlations over 0.9.
 

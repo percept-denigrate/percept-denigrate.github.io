@@ -1,6 +1,6 @@
 The Legendre transform is a transformation of convex functions.
 
-The Legendre transform of a function $f$ expresses the same function, but as a function of its derivative. Instead of expressing $f(x)$, it expresses $f(x(p))$ where $p$ is the slope of $f$.
+The Legendre transform of a function $f(x)$ expresses the same function, but as a function of its derivative $p=\frac{df}{dx}$. 
 
 ![[legendre.png]]
 
@@ -88,7 +88,40 @@ Just like a point in the domain is represented by a complex exponential in the c
 
 # Uses in physics
 
-The Legendre transform is used in optimization to solve a problem's dual problem.
+The Legendre transform is used in optimization to solve a problem's dual problem. Instead of solving
+
+$$
+\displaystyle\min_x f(x)
+$$
+We write
+
+$$
+f(x)=\displaystyle\sup_p(px-f^*(p))
+$$
+
+The problem then becomes
+
+$$
+\displaystyle\min_x\sup_p(px-f^*(p))
+$$
+
+If $f$ is convex, we can swap $min$ and $sup$:
+
+$$
+\displaystyle\sup_p\min_x(px-f^*(p))
+$$
+
+Which becomes
+
+$$
+\displaystyle\max_p-f^*(p)
+$$
+
+Or
+
+$$
+\displaystyle\min_pf^*(p)
+$$
 
 It is used to convert functions of one quantity (like position) as a function of its conjugate quantity (like momentum). The [[Laplacian]] and the [[Hamiltonian]] are the Legendre transform of one another.
 
