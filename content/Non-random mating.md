@@ -1,6 +1,6 @@
 Non-random mating  is the violation of the 1st assumption of HWE in [[Mendelian inheritance]]: alleles are drawn from the gene pool and paired randomly.
 
-It changes the heritable characteristics of a population but in a limited way. It only causes change until an equilibrium is reached ans doesn't change allele frequencies. It is thus a weak evolutionary force.
+It changes the heritable characteristics of a population but in a limited way. It only causes change until an equilibrium is reached and doesn't change allele frequencies. It is thus a weak evolutionary force.
 
 # Inbreeding
 

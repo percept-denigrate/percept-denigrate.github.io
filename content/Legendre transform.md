@@ -105,7 +105,7 @@ $$
 \displaystyle\min_x\sup_p(px-f^*(p))
 $$
 
-If $f$ is convex, we can swap $min$ and $sup$:
+If $f$ is convex, we can swap $\text{min}$ and $\text{sup}$:
 
 $$
 \displaystyle\sup_p\min_x(px-f^*(p))

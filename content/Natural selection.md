@@ -242,7 +242,7 @@ It represents the additive genetic variance of fitness * the average change in g
 
 In frequency-dependent selection, adaptation can lead to extinction. This is sometimes called evolutionary suicide or darwinian extinction, and these traits are called kamikaze traits.
 
-It is a king of [[Fischerian runaway]] selection.
+It is a kind of [[Fischerian runaway]] selection.
 
 Cancer is an empirical example of natural selection leading to the death of individuals.
 
@@ -285,3 +285,5 @@ $$
 $$
 
 The second term accounts for the fact that frequency-dependence can decrease fitness.
+
+This equation can also be derived from the [[Price equation]], when using fitness itself as the trait.
