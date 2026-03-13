@@ -28,4 +28,4 @@ CFA (confirmatory factor analysis) to test the validity of a factor model, where
 
 # Differences with PCA
 
-PCA finds linear combinations of variables that maximize variance, whereas EFA operates under the hypothesis of underlying structure and finds latent variables.
+[[PCA]] finds linear combinations of variables that maximize variance, whereas EFA operates under the hypothesis of underlying structure and finds latent variables.

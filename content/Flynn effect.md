@@ -13,7 +13,7 @@ The Flynn effect seems to have stalled in developed countries, with some observe
 [^2]: [Trahan et al. (2014), *The Flynn effect: a meta-analysis*](https://pmc.ncbi.nlm.nih.gov/articles/PMC4152423)
 
 [^3]: [te Nijenhuis & van der Flier (2013), *Is the Flynn effect on g?*](https://www.sciencedirect.com/science/article/abs/pii/S0160289613000226)
-The first author is known to have racist ideas and the study cites Rushton and Jensen, but the results are valid.
+The first author is known to have racist ideas and the study cites Rushton and Jensen, but the results are valid if we trust [[MCV]].
 
 [^4]: [Teasdale & Owen (2005), *A long-term rise and recent decline in intelligence test performance: The Flynn Effect in reverse*](https://www.sciencedirect.com/science/article/abs/pii/S0191886905001145)
 
