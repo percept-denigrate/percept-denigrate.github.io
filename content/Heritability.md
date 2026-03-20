@@ -4,11 +4,11 @@ Methods for estimating heritability include [[Twin studies]] and [[GWAS]].
 
 For example, twin studies put [[IQ]] heritability between 0.6 and 0.8 in adulthood[^1][^2]. Those estimates are lower in childhood, see the [[Wilson effect]].
 
-| Trait       | Twin studies | GWAS      |
-| ----------- | ------------ | --------- |
-| IQ          | 0.5 - 0.8    | 0.1 - 0.3 |
-| Personality | 0.4 - 0.6    | 0.05-0.15 |
-| Height      | 0.7 - 0.9    | 0.5 0.7   |
+| Trait               | Twin studies | GWAS      |
+| ------------------- | ------------ | --------- |
+| IQ                  | 0.5 - 0.8    | 0.1 - 0.3 |
+| [[Big five]] traits | 0.4 - 0.6    | 0.05-0.15 |
+| Height              | 0.7 - 0.9    | 0.5 0.7   |
 
 Some traits, especially intelligence, show a great gap between heritability estimations from twin studies and GWAS. This is known as the [[Missing heritability]] problem.
 
