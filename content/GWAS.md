@@ -2,7 +2,7 @@ GWAS (genome-wide association studies) are observational studies designed to loc
 
 They identify correlations between a trait and SNPs (single-nucleotide polymorphisms), variation of a single base pair on a given locus. Identified SNPs are called GWAS hits.
 
-We can use these GWAS hits to calculate PGS (polygenic scores) that estimate phenotype.
+We can use these GWAS hits to calculate PGS (polygenic scores) that estimate variation in traits.
 
 However simple GWAS establishing correlations between SNPs and phenotype can capture non-causal correlations due to stratification. If we were to do a GWAS on the whole human population, we would be able to identify "chopstick genes" (SNPs correlated with chopstick usage which is a purely cultural phenomenon), just because they have higher frequency in asian populations. Studies have established that most simple GWAS hits are due to stratification.
 

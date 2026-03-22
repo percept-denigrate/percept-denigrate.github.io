@@ -3,9 +3,9 @@ Security mechanism in browsers restricting how a document or script loaded by on
 For example, it prevents a malicious website from running JS in a browser to read data from company intranet.
 
 Origins are determined by the `Origin` header and are defined by
-- a protocol (`https://`, `ftp://`)
-- a port if specified (`:8080`)
-- a host (domain name or IP address)
+- A protocol (`https://`, `ftp://`)
+- A port if specified (`:8080`)
+- A host (domain name or IP address)
 
 Enabled by default in most browsers, websites can enforce exceptions with CORS headers
 - `Access-Control-Allow-Origin` 

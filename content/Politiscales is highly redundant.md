@@ -14,6 +14,8 @@ There are also binary categories such as conspiracy theorist, anarchist or femin
 
 # Data
 
+I haven't found a way to access answers to specific questions, so I resorted to using the test results themselves.
+
 I downloaded over 300 screenshots of Politiscales results. They were taken from X and public Discord servers. I manually transcribed the values to a CSV file. I thought about automating it with some image recognition model, but the images have different formats, and some values aren't shown directly and have to be deduced, so I figured it would be faster to do it manually.
 
 A lot of the collected test results lean towards the left. It might overrepresent the variance patterns specific to the political left.

@@ -1,4 +1,4 @@
- Looked like tree trunks, 8m tall
+Looked like tree trunks, 8m tall
 
 400M years ago when most animals were fish, they are the largest fossils from that era
 
