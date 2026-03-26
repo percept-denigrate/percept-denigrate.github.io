@@ -92,8 +92,6 @@ Buri (1956)[^1] examined genetic drift in fruit fly populations for the $bw^{75}
 
 ![[buri.png]]
 
-[^1]: [Buri (1956), *Gene frequency in small populations of mutant drosophila*](https://onlinelibrary.wiley.com/doi/10.1111/j.1558-5646.1956.tb02864.x)
-
 # Inbreeding
 
 Inbreeding means individuals share a common ancestor.
@@ -165,3 +163,5 @@ $N_e$ can be different from $N$ because of
 - Population size fluctuations: $N_e$ is the harmonic mean of population size over time, which is sensitive to small values
 - Population structure: if there are small isolated populations, drift is slower because variants are slowly transmitted between groups
 - [[Natural selection]]
+
+[^1]: [Buri (1956), *Gene frequency in small populations of mutant drosophila*](https://onlinelibrary.wiley.com/doi/10.1111/j.1558-5646.1956.tb02864.x)
