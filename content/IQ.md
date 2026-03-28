@@ -15,4 +15,5 @@ It also predicts lifespan, even to some extent within people with IQ higher than
 Some of this predictive power stems from the fact that IQ is partly environmental and caused by living conditions determined by social class, but some of this predictive power remains when controlling for socio-economic status and parent income.
 
 [^1]: [Strenze (2007), *Intelligence and socioeconomic success: A meta-analytic review of longitudinal research*](https://www.sciencedirect.com/science/article/abs/pii/S0160289606001127)
+
 [^2]: [Furnham & Cheng (2017), *Childhood Cognitive Ability Predicts Adult Financial Well-Being*](https://www.mdpi.com/2079-3200/5/1/3)

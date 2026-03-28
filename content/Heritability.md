@@ -15,4 +15,5 @@ Some traits, especially intelligence, show a great gap between heritability esti
 However heritability is typically measured within group. Withing-group heritability does not automatically generalize to between-group heritability, see [[Lewontin's separate soils]].
 
 [^1]:  [Jacobs et al. (2001), *Heritability estimates of intelligence in twins: effect of chorion type*](https://pubmed.ncbi.nlm.nih.gov/11545537/)
+
 [^2]:  [Wright et al. (2001), *Genetics of cognition: outline of a collaborative twin study*](https://pubmed.ncbi.nlm.nih.gov/11665325/)

@@ -13,6 +13,8 @@ Assumptions:
 
 Narrow-sense heritability is then $h^2=2(r_{MZ​}−r_{DZ​})$.
 
+Violation of EEA leads to overestimating heritability, as parents treat monozygotic twins more similarly, making them have higher correlation in observed traits. Positive assortative mating leads to underestimate heritability, as correlation between mother and father genomes makes dizygotic twins more similar.
+
 # MZA
 
 We measure the correlation between monozygotic twins raised in different families, and compare them to correlation between unrelated individuals which is expected to be 0.

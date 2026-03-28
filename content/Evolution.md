@@ -4,7 +4,7 @@ Biological evolution: *change* of *heritable* characteristics of populations ove
 > 
 > —Michael Lynch (2007)
 
-Causes are:
+Causes of evolution come from violations of HWE assumptions. They are:
 - [[Variation]]
 - [[Non-random mating]]
 - [[Mutation]]

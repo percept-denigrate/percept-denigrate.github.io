@@ -1,4 +1,4 @@
-Measurement invariance is a property of factor models produced by [[Factor analysis]] being consistent across different datasets or different groups.
+Measurement invariance is a property of factor models produced by [[Factor analysis]] being consistent across different datasets or different groups. Its goal is to test whether a construct holds validity in different groups.
 
 There are multiple levels of measurement invariance, each one being more specific than the last:
 - Configural: same items 

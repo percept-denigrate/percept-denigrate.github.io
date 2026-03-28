@@ -9,9 +9,7 @@ Population structure: individuals living next to each other are more similar
 
 Environment and alleles can be correlated without causal link. For example, trees on the edge of forests have branches on their whole trunk, whereas trees inside the forest only have branches in the canopy. And trees on the edge are younger and can have accumulated some mutation. It would be easy to wrongly associate this phenotype to these mutations, but it is confounded.
 
-This can lead to associations between alleles and environmentally driven phenotypes. For example, many genetic variants associated with height in Europe are actually confounded by population structure.[¹]
-
-[^1]: [Nordborg & McCarth (2019), *Reduced signal for polygenic adaptation of height in UK Biobank*](https://pmc.ncbi.nlm.nih.gov/articles/PMC6428572/)
+This can lead to associations between alleles and environmentally driven phenotypes. For example, many genetic variants associated with height in Europe are actually confounded by population structure.[^1]
 
 # Disentangling these effects
 
@@ -92,3 +90,5 @@ Site frequency spectrum: stable populations have high number of singletons, very
 Most new mutations are lost to drift in the first generation.
 
 ![[sfs.png]]
+
+[^1]: [Nordborg & McCarth (2019), *Reduced signal for polygenic adaptation of height in UK Biobank*](https://pmc.ncbi.nlm.nih.gov/articles/PMC6428572/)

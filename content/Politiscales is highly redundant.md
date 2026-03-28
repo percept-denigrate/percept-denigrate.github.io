@@ -2,6 +2,7 @@
 tags:
   - project
 ---
+
 [Politiscales](https://politiscales.party/) is an online political positioning test. It is designed to be a more complete version on [8values](https://8values.github.io/), with 8 different axes.
 
 Each axis has 2 separate variables for each side to account for uncertainty. For instance, you can have 62% for constructivism and 21% for essentialism, the remaining 17% being unattributed. The model therefore represents political opinions with 16 free variables.
