@@ -12,4 +12,3 @@ The two first steps are sent to broadcast.
 Clients trust the first DHCP offer they receive, and there is no authentication by default. This can lead to rogue DHCP servers: an attacker runs an unauthorized DHCP server on the network. It can send the wrong gateway or [[DNS]] to clients, do [[MitM]], or redirect clients to malicious sites.
 
 It can be mitigated by DHCP snooping: a layer 2 security feature that makes the switch inspect DHCP messages, control which ports can send DHCP responses, and build an IP-MAP-port table.
-
