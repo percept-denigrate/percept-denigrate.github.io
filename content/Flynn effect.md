@@ -1,4 +1,4 @@
-[[IQ]] has risen over the past century, at rate rate of about 3 points per decade.[^1][^2] Countries where the average IQ is 100 today had an IQ of 75 a century ago.
+Measured [[IQ]] has risen over the past century, at rate rate of about 3 points per decade.[^1][^2] Countries where the average IQ is 100 today had an IQ of 75 a century ago.
 
 ![[flynn_effect.png]]
 

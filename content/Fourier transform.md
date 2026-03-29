@@ -7,6 +7,7 @@ f^*(\omega)=\int_E e^{i\omega f}f(t)dt
 $$
 
 # Examples
+
 # Behavior under operations
 
 | Operation                | Operation on the Fourier transform     |

@@ -73,6 +73,7 @@ $$
 $$
 f^*(p)=\frac{p^2}4
 $$
+
 On domain $I^* = \mathbb R$.
 
 # Behavior under operations
@@ -93,6 +94,7 @@ The Legendre transform is used in optimization to solve a problem's dual problem
 $$
 \displaystyle\min_x f(x)
 $$
+
 We write
 
 $$
@@ -124,4 +126,3 @@ $$
 $$
 
 It is used to convert functions of one quantity (like position) as a function of its conjugate quantity (like momentum). The [[Laplacian]] and the [[Hamiltonian]] are the Legendre transform of one another.
-
