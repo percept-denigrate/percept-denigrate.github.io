@@ -159,6 +159,7 @@ N_e = \frac{p(1 - p)}{2\text{var}(\Delta p)}
 $$
 
 $N_e$ can be different from $N$ because of
+
 - Breeding structure: if only a few males reproduce, drift happens faster
 - Population size fluctuations: $N_e$ is the harmonic mean of population size over time, which is sensitive to small values
 - Population structure: if there are small isolated populations, drift is slower because variants are slowly transmitted between groups

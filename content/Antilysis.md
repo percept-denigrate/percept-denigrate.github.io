@@ -3,6 +3,10 @@ tags:
   - project
 ---
 
+[Github](https://github.com/percept-denigrate/antilysis) - [Crates](https://crates.io/crates/antilysis)
+
+---
+
 I made a Rust library implementing anti-analysis techniques for malware on Windows.
 
 # Background

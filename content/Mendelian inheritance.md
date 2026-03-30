@@ -1,9 +1,11 @@
 Mendel's fundamental discoveries:
+
 - Inheritance is particulate (not blending)
 - Law of segregation: gametes receive only 1 randomly drawn copy from each parent
 - Law of independent assortment: genes are inherited independently from one another
 
 Violations:
+
 - Segregation distortion: alleles are inherited at greater than 50% probability due to an epistatic interaction with the alternate allele
 
 ![[segregation_distortion.png]]
@@ -35,6 +37,7 @@ $$
 We can predict the genotype distribution of the next generation.
 
 HWE assumptions represent the simplest possible case:
+
 1. Draw alleles from the gene pool and randomly pair them
 2. Alleles are drawn infinitely with replacement
 3. Allele frequencies are the same between sexes

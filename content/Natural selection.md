@@ -1,6 +1,7 @@
 Natural selection drift is the violation of the 2nd assumption of HWE in [[Mendelian inheritance]]: gametes aren't preferentially chosen from the gene pool.
 
 It is the original mechanism proposed by Darwin (1859) for [[Evolution]]:
+
 - Individuals have far more offspring that can survive to reproduce (reproductive excess).
 - There is variation between individuals and some of that variation is heritable.
 - Some of that heritable variation gives an advantage to the individual, increasing the chance they reproduce over others.
@@ -125,14 +126,17 @@ When expression is recessive ($h=0$), the shape is parabolic and $\frac{d \overl
 # Viability and frequency-dependent selection
 
 This model assumes that
+
 - Selection is acting on survivorship (viability selection).
 - Genotype fitness is constant and independent of $p$ (frequency-independent selection).
 
 Selection acts on genotype, not directly on alleles. However, assuming HWE, we can calculate the marginal fitness of each allele:
+
 - $w_1^* = P(\text{paired with another }A_1)w_{11}+P(\text{paired with an }A_2)w_{12}$
 - $w_2^* = P(\text{paired with another }A_2)w_{22}+P(\text{paired with an }A_1)w_{12}$
 
 Assuming random mating:
+
 - $w_1^* = pw_{11}+(1-p)w_{12}$
 - $w_2^* = pw_{12}+(1-p)w_{22}$
 

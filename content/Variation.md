@@ -1,4 +1,5 @@
 Phenotypic variation comes from
+
 - genetic variation
 - environment
 - development (fingerprints)

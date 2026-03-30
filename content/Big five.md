@@ -1,4 +1,5 @@
 The Big five is a model for personality. It consists of 5 scores representing different aspects of personality:
+
 - Extroversion: tendency to be outgoing and to seek high-stimulation environments
 - Neuroticism: tendency for stress and negative feelings
 - Agreeableness: tendency to act kindly and avoid conflict

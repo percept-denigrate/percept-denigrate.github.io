@@ -20,8 +20,8 @@ It is used with a chosen number of factors. Loadings are freely estimated.
 
 Factors are then rotated. There are two types of rotation:
 
-- orthogonal (varimax) when we want uncorrelated factors
-- oblique (promax, oblimin) when we accept correlated factors, often used in psychometrics
+- Orthogonal (varimax) when we want uncorrelated factors
+- Oblique (promax, oblimin) when we accept correlated factors, often used in psychometrics
 
 # CFA
 
@@ -30,3 +30,5 @@ CFA (confirmatory factor analysis) to test the validity of a factor model, where
 # Differences with PCA
 
 [[PCA]] finds linear combinations of variables that maximize variance, whereas EFA operates under the hypothesis of underlying structure and finds latent variables.
+
+Factor analysis also separates unique variance from factor variance, whereas PCA doesn't, which makes the former more able to account for measurement error.

@@ -1,6 +1,7 @@
 Measurement invariance is a property of factor models produced by [[Factor analysis]] being consistent across different datasets or different groups. Its goal is to test whether a construct holds validity in different groups.
 
 There are multiple levels of measurement invariance, each one being more specific than the last:
+
 - Configural: same items 
 - Metric (weak): same loadings
 - Scalar (strong): same intercepts
@@ -13,6 +14,7 @@ Measurement invariance is tested with MGCFA (multi-group confirmatory factor ana
 The first step is to estimate a baseline model and models with invariance properties.
 
 All parameters (loadings, intercepts...) are estimated via error-reducing methods:
+
 - Maximum likelihood is most common
 - Robust ML
 - WLSMV for ordinal data
@@ -70,7 +72,9 @@ $$
 $$
 
 It is rarely required and tested for in practice.
+
 i
+
 # Model comparison
 
 The second step is to compare the baseline model to the more constrained invariant models, and see if the constraint induces worse model fit.
@@ -78,11 +82,13 @@ The second step is to compare the baseline model to the more constrained invaria
 The models are sometimes first compared with [[Chi-squared]] difference test.
 
 More common tests include approximate fit indices:
+
 - CFI (comparative fit index): most common
 - RMSEA (root mean square error of approximation)
 - SRMR (standardized root mean square residual): especially for ordinal data
 
 We typically look for the conditions:
+
 - $\Delta CFI \leq 0.01$
 - $\Delta RMSEA \leq 0.015$
 - $\Delta SRMR \leq 0.01$ for metric invariance and $\Delta SRMR \leq 0.015$ for scalar invariance
