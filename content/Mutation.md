@@ -64,6 +64,9 @@ DNA polymerases have an error-correcting mechanism. If they put the wrong nucleo
 
 Mutation =/= DNA damage! Mutations are the consequence of inexact repair of damage or inexact replication.
 
+
+1. DNA polymerase III and I inexact copying and failure to identify mismatch. It can be substitution, deletion or addition. Rates are ~$10^{-8}$ in humans.
+2. Error prone trans-lesion synthesis: when polymerase III falls off on a damaged site and is replaced with IV or V, which can bypass the site but is error-prone.
 # Randomness
 
 # Examples

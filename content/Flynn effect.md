@@ -2,7 +2,10 @@ Measured [[IQ]] has risen over the past century, at rate rate of about 3 points 
 
 ![[flynn_effect.png]]
 
-This highlights the large impact environment has on IQ. The most likely causes are better education, better nutrition, less violence, and changes in measurement. 
+The most likely causes are:
+
+- Increase of intelligence thanks to better education, better nutrition, less violence
+- Changes in measurement
 
 But the Flynn effect is not on [[General intelligence]]: *g*-loaded items are less affected by the Flynn effect.[^3] This means that the Flynn effect and cognitive differences between countries have different causes, otherwise they would have similar loadings.
 
