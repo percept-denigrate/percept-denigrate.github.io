@@ -73,8 +73,6 @@ $$
 
 It is rarely required and tested for in practice.
 
-i
-
 # Model comparison
 
 The second step is to compare the baseline model to the more constrained invariant models, and see if the constraint induces worse model fit.
