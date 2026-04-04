@@ -87,4 +87,14 @@ Mutation =/= DNA damage! Mutations are the consequence of inexact repair of dama
 
 # Randomness
 
+Whether mutations are random or not depends on what we mean by randomness:
+
+- Randomness as lacking pattern or predictability: no because we can locate recombination hotspots and predict mutation types at CpG sites.
+- Randomness as *individually* unpredictable but following a probabilistic distribution holds up.
+- Randomness with respect to genomic location: clearly false, for the same reasons as before.
+- Randomness with respect to the environment: no because organisms living in areas with high UV incidence have higher mutation rates.
+- Randomness with respect to fitness: no because mutations have an impact on fitness.
+- Randomness with respect to their fitness effects: yes, because mutations occur independently of whether they are needed.
+
+Some mutations are more likely to occur than others, but 
 # Examples
