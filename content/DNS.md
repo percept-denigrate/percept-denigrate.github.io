@@ -4,7 +4,7 @@ DNS is implemented over [[UDP]] (port 53) by default. But there are implementati
 
 When a client wants to resolve a domain name, he makes a recursive request to a resolution server. This server makes iterative requests for each domain level. For instance, a query to `www.wikipedia.org` is first sent to the DNS resolver. The resolver asks the root server for the TLD server for `org`. The resolver queries this TLD server, which then redirects the resolver to the SLD server for `wikipedia`, which then redirects to the server for `www`.
 
-![[dns.png]]
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/DNS_Architecture.svg/1280px-DNS_Architecture.svg.png)
 
 DNS servers use caches where they store DNS query results with a timestamp.
 
