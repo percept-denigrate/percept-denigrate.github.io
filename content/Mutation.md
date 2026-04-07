@@ -96,5 +96,20 @@ Whether mutations are random or not depends on what we mean by randomness:
 - Randomness with respect to fitness: no because mutations have an impact on fitness.
 - Randomness with respect to their fitness effects: yes, because mutations occur independently of whether they are needed.
 
-Some mutations are more likely to occur than others, but 
-# Examples
+Some mutations are more likely to occur than others, but independently of their fitness effects.
+
+# Origin of new genes via mutation
+
+There are multiple ways mutations can lead to novelty.
+
+## *De novo* gene synthesis
+
+*De novo* gene synthesis is the emergence of a new gene from intergenic sequences (regions between genes without prior use in genes).
+
+This occurs via the acquisition of an open reading frame (stretch of DNA between a start codon and a stop codon).
+
+Durand et al. (2019)[^1] observed that in a wild yeast species. They found new polymorphic genes, most were short and had low translational efficiency. But some of them were *de novo* and had acquired on open reading frame increasing their translational efficiency.
+
+## Neofunctionalization
+
+[^1]: [Durand et al. (2019), *Turnover of ribosome-associated transcripts from de novo ORFs produces gene-like characteristics available for de novo gene emergence in wild yeast populations*](https://genome.cshlp.org/content/29/6/932.full.pdf)
