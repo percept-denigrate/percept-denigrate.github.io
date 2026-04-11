@@ -1,8 +1,8 @@
 Phenotypic variation comes from
 
-- genetic variation
-- environment
-- development (fingerprints)
+- Genetic variation
+- Environment
+- Development (fingerprints)
 
 # Population structure
 
