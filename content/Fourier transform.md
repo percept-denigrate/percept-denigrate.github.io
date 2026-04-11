@@ -3,10 +3,24 @@ The Fourier transform is a type of linear transformation that expressions functi
 The Fourier transform of a square-integrable function $f$ on a domain $E$ is
 
 $$
-f^*(\omega)=\int_E e^{i\omega f}f(t)dt
+f^*(\omega)=\int_E e^{-i\omega t}f(t)dt
 $$
 
 # Examples
+
+For $f(t)=e^{i\alpha t}$:
+
+$$
+f^*(\omega)=\int_E e^{-i\omega t}e^{i\alpha t}dt
+$$
+
+$$
+f^*(\omega)=\int_E e^{it(\alpha-\omega)}dt
+$$
+
+$$
+f^*(\omega)=\delta_{\alpha}(\omega)
+$$
 
 # Behavior under operations
 
