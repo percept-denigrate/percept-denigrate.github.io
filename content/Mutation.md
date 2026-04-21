@@ -30,9 +30,13 @@ Because of that, many geneticists thought that mutation pressure alone was not a
 
 With both forward and backward mutation $u$ and $v$:
 
-$p_{t+1}=p_t(1-u)+(1-p_t)v$
+$$
+p_{t+1}=p_t(1-u)+(1-p_t)v
+$$
 
-$\Delta p=p_{t+1}-p_t=v(1-p)-up$
+$$
+\Delta p=p_{t+1}-p_t=v(1-p)-up
+$$
 
 The stable equilibrium is:
 
@@ -111,5 +115,7 @@ This occurs via the acquisition of an open reading frame (stretch of DNA between
 Durand et al. (2019)[^1] observed that in a wild yeast species. They found new polymorphic genes, most were short and had low translational efficiency. But some of them were *de novo* and had acquired on open reading frame increasing their translational efficiency.
 
 ## Neofunctionalization
+
+Neofunctionalization can occur following gene duplication, in which a copy écquires a novel function.
 
 [^1]: [Durand et al. (2019), *Turnover of ribosome-associated transcripts from de novo ORFs produces gene-like characteristics available for de novo gene emergence in wild yeast populations*](https://genome.cshlp.org/content/29/6/932.full.pdf)
