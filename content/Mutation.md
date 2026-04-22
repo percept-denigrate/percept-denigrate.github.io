@@ -116,6 +116,22 @@ Durand et al. (2019)[^1] observed that in a wild yeast species. They found new p
 
 ## Neofunctionalization
 
-Neofunctionalization can occur following gene duplication, in which a copy écquires a novel function.
+Neofunctionalization can occur following gene duplication, in which a copy acquires a novel function.
+
+For example, maize underwent a recent whole genome duplication event. ~13% of all duplicates acquired novel regulatory functions.
+
+## Insertional co-option
+
+Retrogenes are processed mRNAs that become reverse-transcribed and inserted back into the genome.
+
+Most are expressed at very low levels, but some are highly expressed.
+
+They have co-opted promoters from other regions, CpG sites, or acquired them *de novo*.
+
+88-280 retrogenes have been found to be co-opted in each species evaluated.[^2]
+
+![](https://pmc.ncbi.nlm.nih.gov/articles/PMC4772013/figure/CARELLIGR198473F2/)
 
 [^1]: [Durand et al. (2019), *Turnover of ribosome-associated transcripts from de novo ORFs produces gene-like characteristics available for de novo gene emergence in wild yeast populations*](https://genome.cshlp.org/content/29/6/932.full.pdf)
+
+[^2]: [Carelli et al. (2016), *The life history of retrocopies illuminates the evolution of new mammalian genes*](https://pmc.ncbi.nlm.nih.gov/articles/PMC4772013/)
