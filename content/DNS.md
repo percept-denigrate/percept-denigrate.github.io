@@ -1,4 +1,4 @@
-DNS (domain name system) in a protocol for resolving domain names and obtaining corresponding IP addresses.
+DNS (domain name system) is a protocol for resolving domain names and obtaining corresponding IP addresses.
 
 DNS is implemented over [[UDP]] (port 53) by default. But there are implementations over [[TLS]] and [[HTTP|HTTPS]]
 

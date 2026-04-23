@@ -70,7 +70,7 @@ $$
 T(p) = \frac1p \displaystyle\sum_{t=1}^{\infty} t(y_{2N,t} - y_{2N,t-1})
 $$
 
-From the [[Diffusion approximation]]:
+From the [[Diffusion]] approximation:
 
 $$
 T(p) = - \frac{4N (1-p) \ln(1-p)}p

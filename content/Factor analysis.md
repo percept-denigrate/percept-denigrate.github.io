@@ -2,6 +2,8 @@ Factor analysis is a class of structural equation modeling algorithms aiming at 
 
 It is often used in psychometrics, because many psychological constructs cannot be measured directly. There is no PCR test for autism, no radiography for anxiety. We need to characterize such traits based on how their manifestations cluster together in populations.
 
+Factor models are often represented with observed variables as squares and latent variables are circles.
+
 ![[factor_analysis.png]]
 
 The value of each item $i$ is given by the factors $F_j$, the loadings $\lambda_{ij}$, the intercept $\tau_{ij}$ and the unique variance (error + specific variance) $\epsilon_i$:
@@ -18,7 +20,7 @@ EFA (exploratory factor analysis) is the factor analysis algorithm to discover l
 
 It is used with a chosen number of factors. Loadings are freely estimated.
 
-Factors are then rotated. There are two types of rotation:
+Factors are then rotated, with two possible types of rotation:
 
 - Orthogonal (varimax) when we want uncorrelated factors
 - Oblique (promax, oblimin) when we accept correlated factors, often used in psychometrics

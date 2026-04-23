@@ -1,6 +1,6 @@
 The general intelligence factor, *g* for short, is a latent variable that explains about half of the variance in intelligence.
 
-Its construction stems from the positive manifold—the fact that cognitive subtest results are positively correlated.
+Its construction stems from the positive manifold—the observation that cognitive subtest results are positively correlated.
 
 ![[positive_manifold.png|Correlation heatmap of various subtests]]
 

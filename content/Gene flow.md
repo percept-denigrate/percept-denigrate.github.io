@@ -82,7 +82,7 @@ $$
 
 Hence, migration behaves like mutation, it maintains diversity in populations.
 
-## Isolation by distance
+## Isolation-by-distance
 
 Represents multiple subpopulations only connected to their immediat neighbors.
 
@@ -96,4 +96,58 @@ $$
 
 ![[gene_flow_isolation_fst.png]]
 
+# Spatial population genetics
+
+More refined models:
+
+- Seek to preserve spatial context of evolution
+- Dispenses with populations and considers a continuum of allele frequencies
+- Treats dispersal as a property of individuals (no migration rate or admixture)
+
+## Principles
+
+- Individuals on a continuous plane
+- Mate choise occurs within a limited radius around the focal individual
+- Dispersal is a property of offspring who move away from the midpoint of parents
+- Movement can be hindered by landscape features
+- Patterns of isolation-by-distance differ depending on the dimensionality of the range
+- Local population density dictates rates of coalescence
+
+This model can explain how inbreeding can occur even in large populations in low-density areas.
+
+## Dispersal
+
+Dispersal is modeled as a [[Diffusion]] process.
+
+It occurs from a parental midpoint, its distance follows a normal distribution of mean $0$ and standard deviation $\sigma$.
+
+In 1D, brownian motion lineages eventually coalesce. In 2D, the probability of that happeneing is 0.[^2]
+
+## Wright's neighborhood size
+
+As $d_{ij}$ becomes small, we can assume:
+
+$$
+P(IBD)=\frac1{\mathscr{N}}
+$$
+
+Where $\mathscr{N}=4\pi\rho\sigma^2$  is Wright's neighborhood size.
+
+It is the number of potential mates around a focal individual.
+
+It dictates the rate of genetic drift locally and determines the slope of isolation-by-distance.
+
+## Range geometry
+
+Multiple models can be used to avoid edges:
+
+- Infinite plane
+- Infinite linear
+- Linear joined at the ends
+- Toroidal
+
+## Effect of edges in 1D
+
 [^1]: [Kimua & Weiss (1964), *The stepping stone model of population structure and the decrease of genetic correlation with distance*](https://academic.oup.com/genetics/article-abstract/49/4/561/6033676)
+
+[^2]: [Nagylaki (1978), *Clines with asymmetric migration*](https://pubmed.ncbi.nlm.nih.gov/17248820/)
