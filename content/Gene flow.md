@@ -146,8 +146,36 @@ Multiple models can be used to avoid edges:
 - Linear joined at the ends
 - Toroidal
 
-## Effect of edges in 1D
+## Effect of edges
+
+In 1D, the probability of coalescence depends on the distance between sample lineages, and where those lineages were samples in space.[^3]
+
+![[gene_flow_edge.png]]
+
+On the same edge, coalescence probability is higher sooner in time. On opposite edges, coalescence probability is low and takes time to increase.
+
+In 2D, genetic diversity is higher in the center than near the edges.
+
+![[gene_flow_edge_2d.png]]
+
+## Isolation-by-distance
+
+Assuming an infinite plane and homogenous population density:
+
+$$
+P(IBD)=\frac1{\mathscr{N}}K_0(\frac{\sqrt{2\mu}|d_{ij}|}\sigma)
+$$
+
+Where $\frac{\sqrt{2\mu}}\sigma$ is the characteristic length and $K_0$ is the Bessel function.
+
+$P(IBD)$ goes to $0$ as $|d_{ij}|$ goes to infinity.
+
+# Gene flow between species
+
+Gene flow can also occur between species, through hybridization or horizontal transfer.
 
 [^1]: [Kimua & Weiss (1964), *The stepping stone model of population structure and the decrease of genetic correlation with distance*](https://academic.oup.com/genetics/article-abstract/49/4/561/6033676)
 
 [^2]: [Nagylaki (1978), *Clines with asymmetric migration*](https://pubmed.ncbi.nlm.nih.gov/17248820/)
+
+[^3]: [Wilkins & Wakeley (2002), *The coalescent in a continuous, finite, linear population*](https://www.researchgate.net/publication/11301346_The_coalescent_in_a_continuous_finite_linear_population)
