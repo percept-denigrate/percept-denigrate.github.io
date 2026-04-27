@@ -174,6 +174,14 @@ $P(IBD)$ goes to $0$ as $|d_{ij}|$ goes to infinity.
 
 Gene flow can also occur between species, through hybridization or horizontal transfer.
 
+Those processses produce result that are equivalent to mutation.
+
+Hybridization often leads to:
+
+- Reduced fitness
+- Hybrid vigor (better fitness)
+- Gene swamping/hybrid swarm
+
 [^1]: [Kimua & Weiss (1964), *The stepping stone model of population structure and the decrease of genetic correlation with distance*](https://academic.oup.com/genetics/article-abstract/49/4/561/6033676)
 
 [^2]: [Nagylaki (1978), *Clines with asymmetric migration*](https://pubmed.ncbi.nlm.nih.gov/17248820/)
