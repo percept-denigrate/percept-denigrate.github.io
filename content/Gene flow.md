@@ -182,6 +182,10 @@ Hybridization often leads to:
 - Hybrid vigor (better fitness)
 - Gene swamping/hybrid swarm
 
+---
+
+From [Zach B. Hancock, *Gene Flow | The Causes of Evolution | Ep. 6*](https://www.youtube.com/watch?v=T2GbG_A06e8)
+
 [^1]: [Kimua & Weiss (1964), *The stepping stone model of population structure and the decrease of genetic correlation with distance*](https://academic.oup.com/genetics/article-abstract/49/4/561/6033676)
 
 [^2]: [Nagylaki (1978), *Clines with asymmetric migration*](https://pubmed.ncbi.nlm.nih.gov/17248820/)

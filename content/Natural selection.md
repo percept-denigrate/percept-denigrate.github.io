@@ -291,3 +291,7 @@ $$
 The second term accounts for the fact that frequency-dependence can decrease fitness.
 
 This equation can also be derived from the [[Price equation]], when using fitness itself as the trait.
+
+---
+
+From [Zach B. Hancock, *Fitness & Natural Selection | The Causes of Evolution | Ep. 3*](https://www.youtube.com/watch?v=tzI3DVI3zok)

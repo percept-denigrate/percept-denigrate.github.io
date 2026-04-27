@@ -111,3 +111,7 @@ This is shaped by population size, dispersal potential, and range configuration.
 Past a certain distance, individuals are equally related (red, blue and yellow subpopulations).
 
 ![[random_mating_position.png]]
+
+---
+
+From [Zach B. Hancock, *# Nonrandom Mating | The Causes of Evolution | Ep. 2*](https://www.youtube.com/watch?v=519JfMbSl_A)

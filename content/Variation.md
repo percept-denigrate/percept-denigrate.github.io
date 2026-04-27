@@ -92,4 +92,8 @@ Most new mutations are lost to drift in the first generation.
 
 ![[sfs.png]]
 
+---
+
+From [Zach B. Hancock, *Variation | The Causes of Evolution | Ep. 1*](https://www.youtube.com/watch?v=lfGvkvTiqI8)
+
 [^1]: [Nordborg & McCarth (2019), *Reduced signal for polygenic adaptation of height in UK Biobank*](https://pmc.ncbi.nlm.nih.gov/articles/PMC6428572/)

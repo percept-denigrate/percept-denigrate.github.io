@@ -132,6 +132,10 @@ They have co-opted promoters from other regions, CpG sites, or acquired them *de
 
 ![](https://pmc.ncbi.nlm.nih.gov/articles/PMC4772013/figure/CARELLIGR198473F2/)
 
+---
+
+From [Zach B. Hancock, *Mutation | The Causes of Evolution | Ep. 4*](https://www.youtube.com/watch?v=4bulxOLIZ7A)
+
 [^1]: [Durand et al. (2019), *Turnover of ribosome-associated transcripts from de novo ORFs produces gene-like characteristics available for de novo gene emergence in wild yeast populations*](https://genome.cshlp.org/content/29/6/932.full.pdf)
 
 [^2]: [Carelli et al. (2016), *The life history of retrocopies illuminates the evolution of new mammalian genes*](https://pmc.ncbi.nlm.nih.gov/articles/PMC4772013/)

@@ -165,4 +165,8 @@ $N_e$ can be different from $N$ because of
 - Population structure: if there are small isolated populations, drift is slower because variants are slowly transmitted between groups
 - [[Natural selection]]
 
+---
+
+From [Zach B. Hancock, *Genetic Drift | The Causes of Evolution | Ep. 5*](https://www.youtube.com/watch?v=13_m7XZvAhg)
+
 [^1]: [Buri (1956), *Gene frequency in small populations of mutant drosophila*](https://onlinelibrary.wiley.com/doi/10.1111/j.1558-5646.1956.tb02864.x)
