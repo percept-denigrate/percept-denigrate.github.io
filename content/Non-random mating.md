@@ -114,4 +114,4 @@ Past a certain distance, individuals are equally related (red, blue and yellow s
 
 ---
 
-From [Zach B. Hancock, *# Nonrandom Mating | The Causes of Evolution | Ep. 2*](https://www.youtube.com/watch?v=519JfMbSl_A)
+From [Zach B. Hancock, *Nonrandom Mating | The Causes of Evolution | Ep. 2*](https://www.youtube.com/watch?v=519JfMbSl_A)

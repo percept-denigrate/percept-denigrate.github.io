@@ -3,10 +3,6 @@ tags:
   - project
 ---
 
-[Github](https://github.com/percept-denigrate/antilysis) - [Crates](https://crates.io/crates/antilysis)
-
----
-
 I made a Rust library implementing anti-analysis techniques for malware on Windows.
 
 # Background
@@ -37,5 +33,9 @@ Many methods were adapted from a state-of-the-art paper.[^1]
 I found out Antilysis has been used by a real malware found in the wild. A [report by OALabs](https://research.openanalysis.net/zharkbot/rust/triage/2024/07/07/zharkbot.html) describes a malware using a packer written in Rust that uses Antilysis.
 
 I'm not sure how to interpret this. One one hand, it means the project did reach its goal of providing anti-analysis capacities to Windows programs. On the other hand, I might be indirectly helping illicit activities. Should I continue maintaining this project?
+
+---
+
+[Github](https://github.com/percept-denigrate/antilysis) - [Crates](https://crates.io/crates/antilysis)
 
 [^1]: [Afianian et al. (2018), *Malware Dynamic Analysis Evasion Techniques: A Survey*](https://arxiv.org/pdf/1811.01190)
