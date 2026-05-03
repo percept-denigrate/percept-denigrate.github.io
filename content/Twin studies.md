@@ -14,7 +14,7 @@ We measure the correlations of a trait among monozygotic twins, who share 100% o
 
 Assumptions:
 
-- EEA (equal environments assumption) : MZ and DZ twins live under equally similar environments
+- EEA (equal environments assumption): MZ and DZ twins live under equally similar environments
 - Random mating
 - No gene-environment interaction or correlation
 

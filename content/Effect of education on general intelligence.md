@@ -28,7 +28,7 @@ Sasha Gusev outlined in a [post](https://theinfinitesimal.substack.com/p/does-ed
 
 - Model B only allows for education to act on some specific skills. If it acted on all of them, the model would be unidentifiable. Thus the hypothesis that education acts on all subtests can't be tested.
 - The study doesn't test models where early IQ have a direct effect on specific skills.
-- Many decisions were made without a provided explanation: the number of specific skills, the use of a single-factor model where a multiple-factor model had better model fit, the paths from education and specific skilles removed in model C. This opens up the possibility of overfitting and*p*-hacking.
+- Many decisions were made without a provided explanation: the number of specific skills, the use of a single-factor model where a multiple-factor model had better model fit, the paths from education and specific skilles removed in model C. This opens up the possibility of overfitting and *p*-hacking.
 
 [Ritchie agrees with the criticisms.](https://www.sciencefictions.org/p/science-fictions-links-for-july-2024)
 
