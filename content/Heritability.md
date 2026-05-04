@@ -2,7 +2,7 @@ Heritability is the measure of genetic contribution to phenotypic variance. Give
 
 Methods for estimating heritability include [[Twin studies]] and [[GWAS]].
 
-For example, twin studies put [[IQ]] heritability between 0.6 and 0.8 in adulthood[^1][^2]. Those estimates are lower in childhood, see the [[Wilson effect]].
+For example, twin studies put [[IQ]] heritability between 0.6 and 0.8 in adulthood[^1][^2].
 
 | Trait               | Twin studies | GWAS      |
 | ------------------- | ------------ | --------- |

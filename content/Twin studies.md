@@ -12,6 +12,8 @@ There are two main types of twin studies.
 
 We measure the correlations of a trait among monozygotic twins, who share 100% of their genes, and dizygotic twins, who share 50% of their genes.
 
+![[twin_ace.webp]]
+
 Assumptions:
 
 - EEA (equal environments assumption): MZ and DZ twins live under equally similar environments

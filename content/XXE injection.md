@@ -23,3 +23,5 @@ Or to perform an [[SSRF]]:
 ```
 <!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://internal.vulnerable-website.com/"> ]>
 ```
+
+It is also possible to do OOB (out of bound) XXE injections by sending data to an attacker-controlled [[HTTP]] server.
