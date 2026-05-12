@@ -52,7 +52,7 @@ PC1 represents the left-right axis. PC2 (about 12% of the variance) is more inte
 | productivism     | -0.216428 | -0.065464 |
 | reformism        | -0.156844 | -0.402050 |
 
- About 2/3 of the variance is explained by PC1, and 90% of the variance is explained by 5 components. This shows that the 16-variables model is highly redundant, as most variation in responses lies in a space of 2 to 5 dimensions.
+About 2/3 of the variance is explained by PC1, and 90% of the variance is explained by 5 components. This shows that the 16-variables model is highly redundant, as most variation in responses lies in a space of 2 to 5 dimensions.
 
 ![[politiscales_variance.png]]
 
