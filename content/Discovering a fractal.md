@@ -169,7 +169,10 @@ The same reasoning can be applied for other values of $a$. For $a=5$, the figure
 
 An interesting property of fractals is that they have a dimension that's typically not an integer. Lines are of dimension 1, surfaces have dimension 2, volumes have dimension 3. But fractals sitting in a 2D plane typically have a dimension of somewhere between 1 and 2, and fractals sitting in a 3D volume between 2 and 3.
 
-
-
-# Conclusion
+| a   | d      |
+| --- | ------ |
+| 3   |        |
+| 4   | 1.7503 |
+| 5   |        |
+ 
 
