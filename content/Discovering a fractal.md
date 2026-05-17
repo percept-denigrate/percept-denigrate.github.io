@@ -1,3 +1,8 @@
+---
+tags:
+  - project
+---
+
 So, I discovered a fractal. Multiple fractals actually. What are they, what are their properties? 
 
 ![](weierstrass.png)
@@ -6,9 +11,9 @@ So, I discovered a fractal. Multiple fractals actually. What are they, what are 
 
 Everything starts with the Weierstrass function. In order to understand what it is and why we care about it in the first place, let's talk about continuity and differentiability.
 
-We say a function is continuous when we can draw its line graph without lifting your pencil. In more rigorous terms, a function $f$ is continuous at the point $c$ if the limit of $f(x)$ as $x$ tends to $c$ is equal to $f(c)$. This neatly encapsulates the intuition we have of continuity. However notice that the exact definition only tells us about continuity on a single point. We say a function is continuous on a line segment if it continuous on all of its points. Similarly, a function is continuous on $\mathbb{R}$, the set of real numbers, if it is continuous on each and every real number.
+We say a function is continuous when we can draw its line graph without lifting our pencil. In more rigorous terms, a function $f$ is continuous at the point $c$ if the limit of $f(x)$ as $x$ tends to $c$ is equal to $f(c)$. This neatly encapsulates the intuition we have of continuity. However notice that the exact definition only tells us about continuity on a single point. We say a function is continuous on a line segment if it continuous on all of its points. Similarly, a function is continuous on $\mathbb{R}$, the set of real numbers, if it is continuous on each and every real number.
 
-On the other hand, we say a function is differentiable when it has a computable, finite slope. In more rigorous terms, a function $f$ is differentiable at the point $c$ when its growth rate converges.
+On the other hand, we say a function is differentiable when it has a well-defined, finite slope. In more rigorous terms, a function $f$ is differentiable at the point $c$ when its growth rate converges.
 
 $$
 f'(a)=\lim _{x\to a}{\frac {f(x)-f(a)}{x-a}}
@@ -24,25 +29,27 @@ As a counter-example, we can look at the function $|x|$. It is continuous on $\m
 
 This example has a single discontinuous point. And if you try to come up with your own counter-examples, you will likely end up with continuous functions with a few undifferentiable points. This begs the question: can a continuous function be not differentiable on a whole line segment, or even on all $\mathbb{R}$? Mathematicians who originally came up with counter-examples like ours thought that no, undifferentiability of continuous functions were localized to some points, that those points couldn't be *everywhere*. However, they were proven wrong by the Weierstrass function.
 
-What's this function? It is defined as the sum of infinitely many sines. The frequency of those sines grows following $4^n$, and those sines are weighted following $\frac{1}{2^n}$.
+What's this function? It is defined as the sum of infinitely many sines. The frequency of those sines grows following $b^n$, and those sines are weighted following $a^n$.
+
+$$
+W(x)=\sum _{n=0}^{\infty }a^n\cos(b^{n}\pi x)
+$$
+
+We add the condition that $ab>1$. This ensures that as $n$ grows, the frequency $b^n$ grows faster than the amplitude $a^n$ shrinks. If $ab\leq1$, the amplitudes would die off fast enough to tame the slopes, and the function could end up differentiable after all. The condition $ab>1$ is precisely what keeps the derivative from ever settling down.
+
+You will often see this function with the specific values $a=\frac{1}2$ and $b=4$:
 
 $$
 W(x)=\sum _{n=0}^{\infty }\frac{\cos(4^{n}\pi x)}{2^{n}}
 $$
 
-And this function is very special, it is continuous everywhere on $\mathbb{R}$, but differentiable *nowhere*. Now let's prove why this is the case. Continuity and differentiability both behave nicely when building functions from other ones. The sum of continuous functions is continuous as well, and the sum of differentiable functions is differentiable as well. The is also true for the product of functions, and even for composition. This allows us to easily prove many of the usual functions are neatly continuous and differentiable, like polynomials or instance. The subtle property that will play a crucial role is that a *finite* sum of functions is continuous or differentiable. When we have an infinite sum like with the Weierstrass function, things are trickier.
+And this function is very special, it is continuous everywhere on $\mathbb{R}$, but differentiable *nowhere*. Now let's prove why this is the case. Continuity and differentiability both behave nicely when building functions from other ones. A finite sum of continuous functions is continuous, and a finite sum of differentiable functions is differentiable. This is also true for products, and even for compositions. This allows us to easily prove many of the usual functions are neatly continuous and differentiable, like polynomials for instance. The subtle property that will play a crucial role is that this property is only automatic for *finite* sums. When we have an infinite sum like with the Weierstrass function, things get trickier.
 
-Looking back at our function's definition, we can look at the different sines it's made up of to understand how the partial sums converge towards the whole function. We know the cosinus function is bounded between -1 and 1. That means that every term's absolute value is bounded by $\frac{1}{2^n}$. Therefore, the difference between the partial sums and the complete function is always uniformly bounded by the sum of $\frac{1}{2^kn}$ for k going from n to infinity. So this difference is a function whose bounds converges towards 0. We call this uniform convergence. And it's the most important hypothesis of the theorem that proves the Weierstrass function is continuous.
+Looking back at our function's definition, we can look at the different sines it's made up of to understand how the partial sums converge towards the whole function. We know the cosine function is bounded between -1 and 1. For the $a$ and $b$ values we took as an example, that means that every term's absolute value is bounded by $\frac{1}{2^n}$. Therefore, the difference between the partial sums and the complete function is always uniformly bounded by the sum of $\frac{1}{2^k}$ for k going from n to infinity. So this difference is a function whose bounds converges towards 0. We call this uniform convergence. And it's the most important hypothesis of the theorem that proves the Weierstrass function is continuous.
 
-On the other hand, if we compute the derivatives of those sines, we notice that the $4^n$ inside is taken out. Their derivatives are equal $-2^n\pi\sin(4^nx)$. We can see the exponential factor $2^n$ making the terms blow up to infinity if we try computing the derivative. This is visible when we look at the graphs of those sines: although they get smaller in amplitude, their frequencies grow even faster than their amplitudes do. So obviously their slopes grow larger exponentially, and can't be summed. It is because the exponential term inside the cos grows exponentially faster than the exponential factor damping the amplitudes that we get this result.
+On the other hand, if we compute the derivatives of those sines, we notice that the $4^n$ inside is taken out. Their derivatives are equal to $-2^n\pi\sin(4^nx)$. We can see the exponential factor $2^n$ making the terms blow up to infinity if we try computing the derivative. This is visible when we look at the graphs of those sines: although they get smaller in amplitude, their frequencies grow even faster than their amplitudes do. So obviously their slopes grow larger exponentially, and the sum diverges to infinity. In short: the frequencies grow faster than the amplitudes shrink, and that imbalance is exactly what makes the function nowhere differentiable. This tells us the partial sums' derivatives diverge, but it doesn't immediately prove the full function is nowhere differentiable, that requires a more careful argument about difference quotients that I'll spare you here. The intuition is solid though: the frequencies grow faster than the amplitudes shrink, and that imbalance is exactly what makes the function nowhere differentiable.
 
 And this explains why the Weierstrass function is continuous everywhere and differentiable nowhere. We can zoom to any point of its graph, and always see more details. It is impossible to even tell if the function is going up or down at any given point.
-
-Before we move on to the next part, I have to admit that I lied. Actually the official definition of the Weierstrass function is a bit more general. It is defined with general parameters $a$ and $b$, and the function I talked about is the specific case when $a=\frac{1}2$ and $b=4$.
-
-$$
-W(x)=\sum _{n=0}^{\infty }a^{n}\cos(b^{n}\pi x)
-$$
 
 # Building the fractal
 
@@ -54,7 +61,7 @@ $$
 e^{ix}+\frac{1}2 e^{4ix}=\cos x+\frac{1}{2}\cos\left(4x\right)+i\sin x+i\frac{1}{2}\sin\left(4x\right)
 $$
 
-When we represent such functions in the complex plane, we get figures called *epicycles*. The point described by $f(x)$ moves along a cyclical shape. The simplest epicycle is a boring circle, corresponding to the function $e^{ix}$. The epicycle corresponding to $e^{ix}+\frac{1}2 e^{4ix}$ looks like this:
+ Since $e^{ix}$ traces a circle in the complex plane as $x$ varies, a sum like $e^{ix}+\frac{1}2 e^{4ix}$ traces a more complex path: one circle riding on top of another. These nested rotating circles are called *epicycles*, and their combined tip traces a curve in the plane. The simplest epicycle is a boring circle, corresponding to the function $e^{ix}$. The epicycle corresponding to $e^{ix}+\frac{1}2 e^{4ix}$ looks like this:
 
 ![[simple_epicycle.png]]
 
@@ -66,7 +73,7 @@ $$
 \tilde W(x)=\sum _{n=0}^{\infty }a^{n}e^{ib^{n}2\pi x}
 $$
 
-I chose to put $2\pi x$ rather than $\pi x$ in the exponential, because it makes the function 1-periodic and therefore a bit nicer to manipulate.
+I chose to put $2\pi x$ rather than $\pi x$ in the exponential, because it makes the function 1-periodic ($\tilde W(x+1)=\tilde W(x)$) and therefore a bit nicer to manipulate.
 
 We therefore have:
 
@@ -88,7 +95,7 @@ Plugging other values for $b$ yields different figures. When $b$ is an integer, 
 
 When $b$ isn't an integer, we get very messy non-repeating figures that fill out the space.
 
-And when $b$ is negative, we get even more fractals! Those look like starts with $1-b$ branches. for $b=-4$, it's a 5-branched star.
+And when $b$ is negative, we get even more fractals! Those look like stars with $1-b$ branches. for $b=-4$, it's a 5-branched star.
 
 ![[weierstrass_-4.png]]
 
@@ -142,7 +149,7 @@ $$
 e^{i\frac{4^{n}2\pi}3}=j^{4^n}
 $$
 
-Remember when we said that $j^4=j$? Well it also means that ${j^4}^2=j^4=j$. In fact, by recursion, this is true for any power of 4. Thus:
+Remember when we said that $j^4=j$? Well it also means that ${j^4}^2=j^4=j$. More generally, $j^{4^n}=j^{4^n \mod 3}$. Since $4 = 1 \mod 3$, we get $4^n=1 \mod 3$ for all $n\geq 0$. Thus $j ^{4^n}=j^1=j$, and:
 
 $$
 e^{i\frac{4^{n}2\pi}3}=j
@@ -166,21 +173,21 @@ $$
 \tilde W(x+\frac{1}3)=j\tilde W(x)
 $$
 
-Therefore proving the central symmetry.
+Therefore proving central symmetry.
 
 The axial symmetry follows from two facts together:
 - First, $\tilde{W}$ is an epicycle built from cosines (real part) and sines (imaginary part). Since cosine is even and sine is odd, the figure is symmetric with respect to the real axis, aka the horizontal axis.
 - Second, we just proved the figure has 3-fold rotational symmetry. A figure that has both one axis of symmetry and n-fold rotational symmetry necessarily has n axes of symmetry total, each separated by an angle of $\frac{\pi}{n}$​. Applying this with $n=3$: the horizontal axis of symmetry, combined with rotational symmetry of order 3, generates two further axes of symmetry at angles $\frac{\pi}{3}$​ and $\frac{2\pi}{3}$​ from it. This yields the 3 axes visible in the figure.
 
-The same reasoning can be applied for other values of $b$. For $b=5$, the figure has 4-fold central rotational symmetry and 4 axes of symmetry. In fact, the fractal has $b-1$ fold symmetry, for all integers $b$ greater or equal to 2, and $1-b$ fold symmetry for all integers $b$ lesser or equal to 1.
+The same reasoning can be applied for other values of $b$. For $b=5$, the figure has 4-fold central rotational symmetry and 4 axes of symmetry. In fact, the fractal has $b-1$ fold symmetry, for all integers $b$ greater or equal to 2, and $1-b$ fold symmetry for all integers $b$ less than or equal to -1.
 
 # Dimension
 
-An interesting property of fractals is that they have a dimension that's typically not an integer. Lines are of dimension 1, surfaces have dimension 2, volumes have dimension 3. But fractals sitting in a 2D plane typically have a dimension of somewhere between 1 and 2, and fractals sitting in a 3D volume between 2 and 3.
+An interesting property of fractals is that they have a dimension that's typically not an integer. Lines have dimension 1, surfaces have dimension 2, volumes have dimension 3. But fractals sitting in a 2D plane typically have a dimension of somewhere between 1 and 2, and fractals sitting in a 3D volume between 2 and 3.
 
 One approach to calculating a fractal's dimension is called box counting, sometimes called Minkowski–Bouligand dimension. 
 
-The core of the idea is to place the figure in a grid of squares of a given size, and see how many squares are to cover the figure As the size of the squares scales down, the number of squares required scales up. And the relationship between those two scaling factors gives the dimension. The advantage of this approach is that it works computationally, and doesn't require self-similarity.
+The core of the idea is to place the figure in a grid of squares of a given size, and see how many squares are needed to cover the figure As the size of the squares scales down, the number of squares required scales up. And the relationship between those two scaling factors gives the dimension. The advantage of this approach is that it works computationally, and doesn't require self-similarity.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Great_Britain_Box.svg/960px-Great_Britain_Box.svg.png)
 
@@ -193,13 +200,13 @@ $$
 Using logarithms, we get:
 
 $$
-\log(N(\epsilon))=-d\log(\epsilon)
+\log(N(\epsilon))=d\log(\frac1\epsilon)
 $$
 
 Thus:
 
 $$
-d=-\frac{\log(N(\epsilon))}{\log(\epsilon)}
+d=\frac{\log(N(\epsilon))}{\log(\frac1\epsilon)}
 $$
 
 I wrote a Python script to compute the box-counting dimension. It calculates an approximation of the function with a fixed number of points, computes the number of squares $N(\epsilon)$ for 10 values of logarithmically spaced $\epsilon$, then runs a linear regression on the logarithms to get the value of $d$.
@@ -224,4 +231,4 @@ For $b=4$, the computed box-counting dimension is 1.7503. We can run the script 
 | -3  | 1.5521 |
 | -2  | 1.0762 |
 
- There is a second way of considering dimension: the Hausdorff dimension. It is more formal, but also harder. The figure does show self-similarity, it contains smaller copies of itself of varying sizes. However I haven't succeeded in finding patterns consistent enough so far.  The curve of the original Weierstrass function does have a Hausdorff dimension of $2+\frac{\log a}{\log b}$, but this doesn't automatically translate into the epicycle, and isn't consistent with the box-counting dimensions we just computed.
+ There is a second way of considering dimension: the Hausdorff dimension. It is more formal, but also harder. The figure does show self-similarity, it contains approximate smaller copies of itself at varying scales. However I haven't succeeded in finding patterns consistent enough so far.  The curve of the original Weierstrass function does have a Hausdorff dimension of $2+\frac{\log a}{\log b}$, but this doesn't automatically translate into the epicycle, and isn't consistent with the box-counting dimensions we just computed. This remains an open question worth exploring.
