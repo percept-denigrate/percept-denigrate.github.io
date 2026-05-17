@@ -32,7 +32,7 @@ $$
 
 And this function is very special, it is continuous everywhere on $\mathbb{R}$, but differentiable *nowhere*. Now let's prove why this is the case. Continuity and differentiability both behave nicely when building functions from other ones. The sum of continuous functions is continuous as well, and the sum of differentiable functions is differentiable as well. The is also true for the product of functions, and even for composition. This allows us to easily prove many of the usual functions are neatly continuous and differentiable, like polynomials or instance. The subtle property that will play a crucial role is that a *finite* sum of functions is continuous or differentiable. When we have an infinite sum like with the Weierstrass function, things are trickier.
 
-Looking back at our function's definition, we can look at the different sines it's made up of to understand how the partial sums converge towards the whole function. We know the cosinus function is bounded between -1 and 1. That means that every term's absolute value is bounded by $\frac{1}{2^n}$. Therefore, the difference between the partial sums and the complete function is always uniformly bounded by the sum of $\frac{1}{2kn}$ for k going from n to infinity. So this difference is a function whose bounds converges towards 0. We call this uniform convergence. And it's the most important hypothesis of the theorem that proves the Weierstrass function is continuous.
+Looking back at our function's definition, we can look at the different sines it's made up of to understand how the partial sums converge towards the whole function. We know the cosinus function is bounded between -1 and 1. That means that every term's absolute value is bounded by $\frac{1}{2^n}$. Therefore, the difference between the partial sums and the complete function is always uniformly bounded by the sum of $\frac{1}{2^kn}$ for k going from n to infinity. So this difference is a function whose bounds converges towards 0. We call this uniform convergence. And it's the most important hypothesis of the theorem that proves the Weierstrass function is continuous.
 
 On the other hand, if we compute the derivatives of those sines, we notice that the $4^n$ inside is taken out. Their derivatives are equal $-2^n\sin(4^nx)$. We can see the exponential factor $2^n$ making the terms blow up to infinity if we try computing the derivative. This is visible when we look at the graphs of those sines: although they get smaller in amplitude, their frequencies grow even faster than their amplitudes do. So obviously their slopes grow larger exponentially, and can't be summed. It is because the exponential term inside the cos grows exponentially faster than the exponential factor damping the amplitudes that we get this result.
 
@@ -91,6 +91,7 @@ Well, to be honest, during the writing of this video I found [a blog post](https
 ![](https://risingentropy.com/wp-content/uploads/2018/11/epicycles_frequency_quadrupling.gif)
 
 In order to make up for my utter lack of originality, I will go further and explore mathematical properties of this fractal.
+
 # Symmetry
 
 The first property we can explore is its symmetry. We can see the fractal has radial symmetry with respect to 3 axes, and central symmetry with angle $\frac{2\pi}3$. In order to properly demonstrate this, we have to formalize it. 
@@ -169,17 +170,50 @@ The same reasoning can be applied for other values of $a$. For $a=5$, the figure
 
 An interesting property of fractals is that they have a dimension that's typically not an integer. Lines are of dimension 1, surfaces have dimension 2, volumes have dimension 3. But fractals sitting in a 2D plane typically have a dimension of somewhere between 1 and 2, and fractals sitting in a 3D volume between 2 and 3.
 
-There are two definitions of a fractal's dimension.
+One approach to calculating a fractal's dimension is called box counting, sometimes called Minkowski–Bouligand dimension. 
 
-| a      | d      |
-| ------ | ------ |
-| 2      | 1.0936 |
-| 3      | 1.5485 |
-| 4      | 1.7503 |
-| 5<br>  | 1.8425 |
-| -4<br> | 1.7623 |
-| -3     | 1.5521 |
-| -2     | 1.0762 |
- 
- There is a second way of considering dimension: the Hausdorff dimension. It is more formal, but also harder. I tried finding consistent patterns of self-similarity, but I haven't succeeded so far.
+The core of the idea is to place the figure in a grid of squares of a given size, and see how many squares are to cover the figure As the size of the squares scales down, the number of squares required scales up. And the relationship between those two scaling factors gives the dimension. The advantage of this approach is that it works computationally, and doesn't require self-similarity.
 
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Great_Britain_Box.svg/960px-Great_Britain_Box.svg.png)
+
+When writing $d$ the fractal's dimension, $\epsilon$ the side length and $N(\epsilon)$ the associated number of boxes required to cover the set, the scaling relationship is:
+
+$$
+N(\epsilon)=(\frac1\epsilon)^d
+$$
+
+Using logarithms, we get:
+
+$$
+\log(N(\epsilon))=-d\log(\epsilon)
+$$
+
+Thus:
+
+$$
+d=-\frac{\log(N(\epsilon))}{\log(\epsilon)}
+$$
+
+I wrote a Python script to compute the box-counting dimension. It calculates an approximation of the function with a fixed number of points, computes the number of squares $N(\epsilon)$ for 10 values of logarithmically spaced $\epsilon$, then runs a linear regression on the logarithms to get the value of $d$.
+
+The script also shows the graph, which allows to visually confirm enough points were computed with enough precision. If the points stop following the same trend for small sizes $\epsilon$, it means the squares are getting to small and we need a more precise approximation.
+
+![[plot_4_bad.png]]
+
+To make sure the result is reasonably correct, we simply have to increase the number of data points until the points are well-aligned.
+
+![[plot_4.png]]
+
+For $a=4$, the computed box-counting dimension is 1.7503. We can run the script for multiple values of $a$, which gives:
+
+| a   | d      |
+| --- | ------ |
+| 2   | 1.0936 |
+| 3   | 1.5485 |
+| 4   | 1.7503 |
+| 5   | 1.8425 |
+| -4  | 1.7623 |
+| -3  | 1.5521 |
+| -2  | 1.0762 |
+
+ There is a second way of considering dimension: the Hausdorff dimension. It is more formal, but also harder. I tried finding consistent patterns of self-similarity, but I haven't succeeded so far. The figure does show 
