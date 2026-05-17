@@ -171,10 +171,15 @@ An interesting property of fractals is that they have a dimension that's typical
 
 There are two definitions of a fractal's dimension.
 
-| a   | d      |
-| --- | ------ |
-| 3   | 1.5485 |
-| 4   | 1.7503 |
-| 5   | 1.8425 |
+| a      | d      |
+| ------ | ------ |
+| 2      | 1.0936 |
+| 3      | 1.5485 |
+| 4      | 1.7503 |
+| 5<br>  | 1.8425 |
+| -4<br> | 1.7623 |
+| -3     | 1.5521 |
+| -2     | 1.0762 |
  
+ There is a second way of considering dimension: the Hausdorff dimension. It is more formal, but also harder. I tried finding consistent patterns of self-similarity, but I haven't succeeded so far.
 
