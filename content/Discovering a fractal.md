@@ -3,7 +3,7 @@ tags:
   - project
 ---
 
-So, I discovered a fractal. Multiple fractals actually. These beautiful figures were hidden behind one of math's most infamous monsters. We will explore mathematical grounds that were one considered safe and tame, discover a monster that broke a generation of mathematicians, then build beautiful fractals from this monster, and finally explore some of their properties.
+So, I discovered a fractal. Multiple fractals actually. These beautiful figures were hidden behind one of math's most infamous monsters. We will explore mathematical grounds that were once considered safe and tame, discover a monster that broke a generation of mathematicians, then build beautiful fractals from this monster, and finally explore some of their properties.
 
 ![](weierstrass.png)
 
@@ -71,7 +71,8 @@ We call this uniform convergence. And it's the most important hypothesis of the 
 
 On the other hand, if we compute the derivatives of those sines, we notice that the $4^n$ inside is taken out. Their derivatives are equal to $-2^n\pi\sin(4^n\pi x)$. 
 
-$$\frac{d}{dx}\left(\frac{\cos(4^n \pi x)}{2^n}\right) = \frac{-4^n \pi \sin(4^n \pi x)}{2^n} = -2^n \pi \sin(4^n \pi x)
+$$
+\frac{d}{dx}\left(\frac{\cos(4^n \pi x)}{2^n}\right) = \frac{-4^n \pi \sin(4^n \pi x)}{2^n} = -2^n \pi \sin(4^n \pi x)
 $$
 
 We can see the exponential factor $2^n$ making the terms blow up to infinity if we try computing the derivative. This is visible when we look at the graphs of those sines: although they get smaller in amplitude, their frequencies grow even faster than their amplitudes do.
@@ -88,21 +89,31 @@ And this explains why the Weierstrass function is continuous everywhere and diff
 
 # Building the fractal
 
-So, we've seen the Weierstrass function is a sum of sines, with different frequencies and different amplitudes.
+So, we've seen the Weierstrass function is a sum of cosines, with different frequencies and different amplitudes. The trick is to treat the Weierstrass function as the *real part* of something larger.
 
-We have $e^{ix}=\cos x+i\sin x$. Sine and cosine are dual functions in some way. And since this is a linear equality, it can apply to sums of sines and cosines as well. For example:
+To understand the trick, we need to talk about complex numbers for a moment. A complex number is just a pair of real numbers, a real part and an imaginary part, that we write as $a+bi$, where $i=\sqrt{-1}$​. We can think of complex numbers as points in a 2D plane, where the horizontal axis is the real part and the vertical axis is the imaginary part.
+
+Now, what happens when we compute $e^{ix}$ for a real number $x$? There's a remarkable theorem called Euler's formula that tells us:
+
+$$
+e^{ix}=\cos x+i\sin x
+$$
+
+![](https://upload.wikimedia.org/wikipedia/commons/7/71/Euler%27s_formula.svg)
+
+This is the most important formula tying together complex numbers and trigonometry. Sine and cosine are dual functions in some way, the exponential of a pure imaginary number decomposes into a real cosine and an imaginary sine. What this means geometrically is that as $x$ grows, the point $e^{ix}$ traces a circle of radius 1 in the complex plane. And since this is a linear equality, it can apply to sums of sines and cosines as well. For example:
 
 $$
 e^{ix}+\frac{1}2 e^{4ix}=\cos x+\frac{1}{2}\cos\left(4x\right)+i\sin x+i\frac{1}{2}\sin\left(4x\right)
 $$
 
- Since $e^{ix}$ traces a circle in the complex plane as $x$ varies, a sum like $e^{ix}+\frac{1}2 e^{4ix}$ traces a more complex path: one circle riding on top of another. These nested rotating circles are called *epicycles*, and their combined tip traces a curve in the plane. The simplest epicycle is a boring circle, corresponding to the function $e^{ix}$. The epicycle corresponding to $e^{ix}+\frac{1}2 e^{4ix}$ looks like this:
+ Since $e^{ix}$ traces a circle in the complex plane, a sum like $e^{ix}+\frac{1}2 e^{4ix}$ traces a more complex path: one circle riding on top of another. These nested rotating circles are called *epicycles*, and their combined tip traces a curve in the plane. The simplest epicycle is a boring circle, corresponding to the function $e^{ix}$. The epicycle corresponding to $e^{ix}+\frac{1}2 e^{4ix}$ looks like this:
 
 ![[simple_epicycle.png]]
 
 An interesting property of epicycles is their symmetry. When the epicycle is the sum of a real cosine and an imaginary sine, the figure is symmetrical with respect to the horizontal axis. Why? On one hand cos is symmetric, meaning that for any $x$, $\cos(-x)=\cos(x)$. On the other hand sin is antisymmetric, meaning that for any $x$, $\sin(-x)=-\sin(x)$. Therefore when tracing the figure the other way around, we simply trace the same figure with its vertical axis (determined by sines) flipped.
 
-And of course, we can do the same with the Weierstrass function. We can see it as the real part of a complex function that we'll call $\tilde W$:
+This is the bridge we need. Cosine, which appears in the Weierstrass function, is exactly the horizontal coordinate of this circular motion. So the Weierstrass function — a sum of cosines — is really just the horizontal shadow of something rotating in the complex plane. And if we stop projecting down to just the horizontal axis, and instead watch the full 2D motion, we get something richer. We can do the same with the Weierstrass function. We can see it as the real part of a complex function that we'll call $\tilde W$:
 
 $$
 \tilde W(x)=\sum _{n=0}^{\infty }a^{n}e^{ib^{n}2\pi x}
@@ -213,7 +224,7 @@ Therefore proving central symmetry.
 The axial symmetry follows from two facts together:
 
 - First, $\tilde{W}$ is an epicycle built from cosines (real part) and sines (imaginary part). Since cosine is even and sine is odd, the figure is symmetric with respect to the real axis, aka the horizontal axis.
-- Second, we just proved the figure has 3-fold rotational symmetry. A figure that has both one axis of symmetry and n-fold rotational symmetry necessarily has n axes of symmetry total, each separated by an angle of $\frac{\pi}{n}$​. Applying this with $n=3$: the horizontal axis of symmetry, combined with rotational symmetry of order 3, generates two further axes of symmetry at angles $\frac{\pi}{3}$​ and $\frac{2\pi}{3}$​ from it. This yields the 3 axes visible in the figure.
+	- Second, we just proved the figure has 3-fold rotational symmetry. A figure that has both one axis of symmetry and n-fold rotational symmetry necessarily has n axes of symmetry total, each separated by an angle of $\frac{\pi}{n}$​. Applying this with $n=3$: the horizontal axis of symmetry, combined with rotational symmetry of order 3, generates two further axes of symmetry at angles $\frac{\pi}{3}$​ and $\frac{2\pi}{3}$​ from it. This yields the 3 axes visible in the figure.
 
 The same reasoning can be applied for other values of $b$. For $b=5$, the figure has 4-fold central rotational symmetry and 4 axes of symmetry. In fact, the fractal has $b-1$ fold symmetry, for all integers $b$ greater or equal to 2, and $1-b$ fold symmetry for all integers $b$ less than or equal to -1.
 
@@ -257,18 +268,25 @@ To make sure the result is reasonably correct, we simply have to increase the nu
 
 For $b=4$, the computed box-counting dimension is 1.7503. We can run the script for multiple values of $b$, which gives:
 
-| b   | d      |
-| --- | ------ |
-| 2   | 1.0936 |
-| 3   | 1.5485 |
-| 4   | 1.7503 |
-| 5   | 1.8425 |
-| -4  | 1.7623 |
-| -3  | 1.5521 |
-| -2  | 1.0762 |
+| b   | dimension |
+| --- | --------- |
+| -4  | 1.7623    |
+| -3  | 1.5521    |
+| -2  | 1.0762    |
+| 2   | 1.0936    |
+| 3   | 1.5485    |
+| 4   | 1.7503    |
+| 5   | 1.8425    |
 
- There is a second way of considering dimension: the Hausdorff dimension. It is more formal, but also harder. The figure does show self-similarity, it contains approximate smaller copies of itself at varying scales. However I haven't succeeded in finding patterns consistent enough so far.  The curve of the original Weierstrass function does have a Hausdorff dimension of $2+\frac{\log a}{\log b}$, but this doesn't automatically translate into the epicycle, and isn't consistent with the box-counting dimensions we just computed. This remains an open question worth exploring.
+A few things are worth noticing:
+
+- First, $b=2$ and $b=−2$ both give dimensions close to 1: those fractals are nearly one-dimensional curves, barely filling the plane at all. this is the edge case when $ab=1$. As $∣b∣$ grows, the dimension climbs toward 2, meaning the fractal fills more and more of the plane.
+- Second, positive and negative values of $b$ with the same absolute value give very similar dimensions. The star shape and the triangle shape are geometrically different, but they fill space at roughly the same rate.
+
+ There is a second way of considering dimension: the Hausdorff dimension. It is more formal, but also harder. The figure does show self-similarity, it contains approximate smaller copies of itself at varying scales. However I haven't succeeded in finding patterns consistent enough so far.
+ 
+ The curve of the original Weierstrass function does have a Hausdorff dimension of $2+\frac{\log a}{\log b}$, but this doesn't automatically translate into the epicycle, and isn't consistent with the box-counting dimensions we just computed. This isn't really surprising, the Weierstrass function's graph and our fractal are different in nature. This remains an open question worth exploring.
 
 # Conclusion
 
-It's revealing of what happens in math: we discover monsters that question our previous assumptions and breaks out intuitions. Then we tame those monsters, explore their behavior, and sometimes find beauty in what they have to offer. And this is a continuous process that always leaves mystery on the table, as shown by the Hausdorff dimension we talked about.
+It's revealing of what happens in math: we discover monsters that question our previous assumptions and breaks our intuitions. Then we tame those monsters, explore their behavior, and sometimes find beauty in what they have to offer. And this is a continuous process that always leaves mystery on the table, as shown by the Hausdorff dimension we talked about.
