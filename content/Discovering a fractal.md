@@ -176,6 +176,7 @@ $$
 Therefore proving central symmetry.
 
 The axial symmetry follows from two facts together:
+
 - First, $\tilde{W}$ is an epicycle built from cosines (real part) and sines (imaginary part). Since cosine is even and sine is odd, the figure is symmetric with respect to the real axis, aka the horizontal axis.
 - Second, we just proved the figure has 3-fold rotational symmetry. A figure that has both one axis of symmetry and n-fold rotational symmetry necessarily has n axes of symmetry total, each separated by an angle of $\frac{\pi}{n}$​. Applying this with $n=3$: the horizontal axis of symmetry, combined with rotational symmetry of order 3, generates two further axes of symmetry at angles $\frac{\pi}{3}$​ and $\frac{2\pi}{3}$​ from it. This yields the 3 axes visible in the figure.
 
