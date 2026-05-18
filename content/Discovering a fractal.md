@@ -3,7 +3,7 @@ tags:
   - project
 ---
 
-So, I discovered a fractal. Multiple fractals actually. What are they, what are their properties? 
+So, I discovered a fractal. Multiple fractals actually. These beautiful figures were hidden behind one of math's most infamous monsters. We will explore mathematical grounds that were one considered safe and tame, discover a monster that broke a generation of mathematicians, then build beautiful fractals from this monster, and finally explore some of their properties.
 
 ![](weierstrass.png)
 
@@ -11,31 +11,31 @@ So, I discovered a fractal. Multiple fractals actually. What are they, what are 
 
 Everything starts with the Weierstrass function. In order to understand what it is and why we care about it in the first place, let's talk about continuity and differentiability.
 
-We say a function is continuous when we can draw its line graph without lifting our pencil. In more rigorous terms, a function $f$ is continuous at the point $c$ if the limit of $f(x)$ as $x$ tends to $c$ is equal to $f(c)$. This neatly encapsulates the intuition we have of continuity. However notice that the exact definition only tells us about continuity on a single point. We say a function is continuous on a line segment if it continuous on all of its points. Similarly, a function is continuous on $\mathbb{R}$, the set of real numbers, if it is continuous on each and every real number.
+We usually say a function is continuous when we can draw its line graph without lifting our pencil. In more rigorous terms, a function $f$ is continuous at the point $c$ if the limit of $f(x)$ as $x$ tends to $c$ is equal to $f(c)$. This neatly encapsulates the intuition we have of continuity. However notice that the exact definition only tells us about continuity at a single point. We say a function is continuous on a line segment if it continuous at all of its points. Similarly, a function is continuous on $\mathbb{R}$, the set of real numbers, if it is continuous at each and every real number.
 
-On the other hand, we say a function is differentiable when it has a well-defined, finite slope. In more rigorous terms, a function $f$ is differentiable at the point $c$ when its growth rate converges.
+On the other hand, we say a function is differentiable when it has a well-defined, finite slope. In more rigorous terms, a function $f$ is differentiable at the point $p$ when its growth rate converges.
 
 $$
-f'(a)=\lim _{x\to a}{\frac {f(x)-f(a)}{x-a}}
+f'(p)=\lim _{x\to p}{\frac {f(x)-f(p)}{x-p}}
 $$
 
 Notice once again that the definition only tells us about differentiability on a single point. Again, a function is differentiable on $\mathbb{R}$ when it is differentiable on all real numbers.
 
-It it worth to be noted that differentiability implies continuity. A function can only be differentiable if it is already continuous. The converse is not necessarily true.
+It it worth noting that differentiability implies continuity. A function can only be differentiable if it is already continuous. The converse is not necessarily true.
 
-As a counter-example, we can look at the function $|x|$. It is continuous on $\mathbb{R}$. The left-hand part is differentiable and its derivative is -1, the right-hand part is differentiable and its derivative is 1. What happens on 0 is quite literally an edge case: the derivative can not exist, because the growth rate converges towards a different value depending on the side we compute it on.
+As a counter-example, we can look at the function $|x|$. It is continuous on $\mathbb{R}$. The left-hand part is differentiable and its derivative is -1, the right-hand part is differentiable and its derivative is 1. What happens at 0 is quite literally an edge case: the derivative can not exist, because the growth rate converges towards a different value depending on the side we compute it on.
 
 ![[abs.png]]
 
 This example has a single discontinuous point. And if you try to come up with your own counter-examples, you will likely end up with continuous functions with a few undifferentiable points. This begs the question: can a continuous function be not differentiable on a whole line segment, or even on all $\mathbb{R}$? Mathematicians who originally came up with counter-examples like ours thought that no, undifferentiability of continuous functions were localized to some points, that those points couldn't be *everywhere*. However, they were proven wrong by the Weierstrass function.
 
-What's this function? It is defined as the sum of infinitely many sines. The frequency of those sines grows following $b^n$, and those sines are weighted following $a^n$.
+What's this function? It is defined as the sum of infinitely many cosines. The frequency of those cosines grows following $b^n$, and those cosines are weighted following $a^n$.
 
 $$
 W(x)=\sum _{n=0}^{\infty }a^n\cos(b^{n}\pi x)
 $$
 
-We add the condition that $ab>1$. This ensures that as $n$ grows, the frequency $b^n$ grows faster than the amplitude $a^n$ shrinks. If $ab\leq1$, the amplitudes would die off fast enough to tame the slopes, and the function could end up differentiable after all. The condition $ab>1$ is precisely what keeps the derivative from ever settling down.
+We add the condition that $ab>1$. This ensures that as $n$ grows, the frequency $b^n$ grows faster than the amplitude $a^n$ shrinks. If $ab<1$, the amplitudes would die off fast enough to tame the slopes, and the function could end up differentiable after all. The case where $ab=1$ is a limit case that depends on the specific value of $a$. The condition $ab>1$ is precisely what keeps the derivative from ever settling down.
 
 You will often see this function with the specific values $a=\frac{1}2$ and $b=4$:
 
@@ -45,9 +45,44 @@ $$
 
 And this function is very special, it is continuous everywhere on $\mathbb{R}$, but differentiable *nowhere*. Now let's prove why this is the case. Continuity and differentiability both behave nicely when building functions from other ones. A finite sum of continuous functions is continuous, and a finite sum of differentiable functions is differentiable. This is also true for products, and even for compositions. This allows us to easily prove many of the usual functions are neatly continuous and differentiable, like polynomials for instance. The subtle property that will play a crucial role is that this property is only automatic for *finite* sums. When we have an infinite sum like with the Weierstrass function, things get trickier.
 
-Looking back at our function's definition, we can look at the different sines it's made up of to understand how the partial sums converge towards the whole function. We know the cosine function is bounded between -1 and 1. For the $a$ and $b$ values we took as an example, that means that every term's absolute value is bounded by $\frac{1}{2^n}$. Therefore, the difference between the partial sums and the complete function is always uniformly bounded by the sum of $\frac{1}{2^k}$ for k going from n to infinity. So this difference is a function whose bounds converges towards 0. We call this uniform convergence. And it's the most important hypothesis of the theorem that proves the Weierstrass function is continuous.
+Looking back at our function's definition, we can look at the different sines it's made up of to understand how the partial sums converge towards the whole function. We know the cosine function is bounded between -1 and 1. For the $a$ and $b$ values we took as an example, that means that every term's absolute value is bounded by $\frac{1}{2^n}$. 
 
-On the other hand, if we compute the derivatives of those sines, we notice that the $4^n$ inside is taken out. Their derivatives are equal to $-2^n\pi\sin(4^nx)$. We can see the exponential factor $2^n$ making the terms blow up to infinity if we try computing the derivative. This is visible when we look at the graphs of those sines: although they get smaller in amplitude, their frequencies grow even faster than their amplitudes do. So obviously their slopes grow larger exponentially, and the sum diverges to infinity. In short: the frequencies grow faster than the amplitudes shrink, and that imbalance is exactly what makes the function nowhere differentiable. This tells us the partial sums' derivatives diverge, but it doesn't immediately prove the full function is nowhere differentiable, that requires a more careful argument about difference quotients that I'll spare you here. The intuition is solid though: the frequencies grow faster than the amplitudes shrink, and that imbalance is exactly what makes the function nowhere differentiable.
+$$
+W(x)-\sum _{k=0}^{n}\frac{\cos(4^{k}\pi x)}{2^{k}}=\sum _{k=n+1}^{\infty }\frac{\cos(4^{k}\pi x)}{2^{k}}
+$$
+
+$$
+|W(x)-\sum _{k=0}^{n}\frac{\cos(4^{k}\pi x)}{2^{k}}|\leq\sum _{k=n+1}^{\infty }|\frac{\cos(4^{k}\pi x)}{2^{k}}|
+$$
+
+Therefore, the difference between the partial sums and the complete function is always uniformly bounded by the sum of $\frac{1}{2^k}$ for k going from $n+1$ to infinity. 
+
+$$
+|W(x)-\sum _{k=0}^{n}\frac{\cos(4^{k}\pi x)}{2^{k}}|\leq\sum _{k=n+1}^{\infty }\frac1{2^{k}}
+$$
+
+The sequence on the right converges towards 0, so this difference is a function whose bounds converge towards 0 as well. 
+
+$$
+|W(x)-\sum _{k=0}^{n}\frac{\cos(4^{k}\pi x)}{2^{k}}|\rightarrow0
+$$
+
+We call this uniform convergence. And it's the most important hypothesis of the theorem that proves the Weierstrass function is continuous.
+
+On the other hand, if we compute the derivatives of those sines, we notice that the $4^n$ inside is taken out. Their derivatives are equal to $-2^n\pi\sin(4^n\pi x)$. 
+
+$$\frac{d}{dx}\left(\frac{\cos(4^n \pi x)}{2^n}\right) = \frac{-4^n \pi \sin(4^n \pi x)}{2^n} = -2^n \pi \sin(4^n \pi x)
+$$
+
+We can see the exponential factor $2^n$ making the terms blow up to infinity if we try computing the derivative. This is visible when we look at the graphs of those sines: although they get smaller in amplitude, their frequencies grow even faster than their amplitudes do.
+
+![[sines.png]]
+
+So obviously their slopes grow larger exponentially, and the sum diverges to infinity. In short: the frequencies grow faster than the amplitudes shrink, and that imbalance is exactly what makes the function nowhere differentiable.
+
+![[sines_sum.png]]
+
+This tells us the partial sums' derivatives diverge, but it doesn't immediately prove the full function is nowhere differentiable, that requires a more careful argument about difference quotients that I'll spare you here. The intuition is solid though: the frequencies grow faster than the amplitudes shrink, and that imbalance is exactly what makes the function nowhere differentiable.
 
 And this explains why the Weierstrass function is continuous everywhere and differentiable nowhere. We can zoom to any point of its graph, and always see more details. It is impossible to even tell if the function is going up or down at any given point.
 
@@ -107,13 +142,13 @@ Well, to be honest, during the writing of this video I found [a blog post](https
 
 In order to make up for my utter lack of originality, I will go further and explore mathematical properties of this fractal.
 
-# Symmetry
+# Symmetries
 
 The first property we can explore is its symmetry. We can see that when $b=4$, the fractal has radial symmetry with respect to 3 axes, and central symmetry with angle $\frac{2\pi}3$. In order to properly demonstrate this, we have to formalize it. 
 
 Having this symmetry means a point belongs to the line graph if and only if the same point rotated by $\frac{2\pi}3$ belongs to the line graph as well. In the complex numbers, we have a simple way of writing rotations: we multiply with unit complex numbers. The number $1$ represents as rotation of 0 radians. Multiplying by $i$ represents a rotation of $\frac\pi{2}$ radians, or one quarter of a circle. Multiplying by $-1$ is a rotation of $\pi$ radians or half a circle. And in our case, a rotation of a third of a circle corresponds to multiplying by $e^{\frac{i2\pi}3}$, often noted $j$. This number has some useful properties: $j^3=1$, $j^4=j$, etc.
 
-So we have to show that if a point $p$ exists in the line graph, meaning there is a number $x$ such that $\tilde W(x)=p$ if and only if $jp$ exists, meaning there is a number $x'$ such that $\tilde W(x')=jp$. Since the complex Weierstrass function is a periodic function, we can expect that shifting the function by a third of its period yields the same points rotated by a factor of $j$:
+So we have to show that if a point $p$ exists in the line graph, meaning there is a number $x$ such that $\tilde W(x)=p$ if and only if there is a number $x'$ such that $\tilde W(x')=jp$. Since the complex Weierstrass function is a periodic function, we can expect that shifting the function by a third of its period yields the same points rotated by a factor of $j$:
 
 $$
 \tilde W(x+\frac{1}3)=j\tilde W(x)
@@ -210,7 +245,7 @@ $$
 d=\frac{\log(N(\epsilon))}{\log(\frac1\epsilon)}
 $$
 
-I wrote a Python script to compute the box-counting dimension. It calculates an approximation of the function with a fixed number of points, computes the number of squares $N(\epsilon)$ for 10 values of logarithmically spaced $\epsilon$, then runs a linear regression on the logarithms to get the value of $d$.
+I wrote a Python script to compute the box-counting dimension. It calculates an approximation of the function with a fixed number of points, computes the number of squares $N(\epsilon)$ for 10 values of logarithmically spaced $\epsilon$, then runs a linear regression on the logarithms to get the value of $d$ from the slope.
 
 The script also shows the graph, which allows to visually confirm enough points were computed with enough precision. If the points stop following the same trend for small sizes $\epsilon$, it means the squares are getting to small and we need a more precise approximation.
 
@@ -233,3 +268,7 @@ For $b=4$, the computed box-counting dimension is 1.7503. We can run the script 
 | -2  | 1.0762 |
 
  There is a second way of considering dimension: the Hausdorff dimension. It is more formal, but also harder. The figure does show self-similarity, it contains approximate smaller copies of itself at varying scales. However I haven't succeeded in finding patterns consistent enough so far.  The curve of the original Weierstrass function does have a Hausdorff dimension of $2+\frac{\log a}{\log b}$, but this doesn't automatically translate into the epicycle, and isn't consistent with the box-counting dimensions we just computed. This remains an open question worth exploring.
+
+# Conclusion
+
+It's revealing of what happens in math: we discover monsters that question our previous assumptions and breaks out intuitions. Then we tame those monsters, explore their behavior, and sometimes find beauty in what they have to offer. And this is a continuous process that always leaves mystery on the table, as shown by the Hausdorff dimension we talked about.
