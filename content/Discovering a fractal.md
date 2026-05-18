@@ -21,7 +21,7 @@ $$
 
 Notice once again that the definition only tells us about differentiability on a single point. Again, a function is differentiable on $\mathbb{R}$ when it is differentiable on all real numbers.
 
-It it worth noting that differentiability implies continuity. A function can only be differentiable if it is already continuous. The converse is not necessarily true.
+It is worth noting that differentiability implies continuity. A function can only be differentiable if it is already continuous. The converse is not necessarily true.
 
 As a counter-example, we can look at the function $|x|$. It is continuous on $\mathbb{R}$. The left-hand part is differentiable and its derivative is -1, the right-hand part is differentiable and its derivative is 1. What happens at 0 is quite literally an edge case: the derivative can not exist, because the growth rate converges towards a different value depending on the side we compute it on.
 
@@ -285,7 +285,9 @@ A few things are worth noticing:
 
  There is a second way of considering dimension: the Hausdorff dimension. It is more formal, but also harder. The figure does show self-similarity, it contains approximate smaller copies of itself at varying scales. However I haven't succeeded in finding patterns consistent enough so far.
  
- The curve of the original Weierstrass function does have a Hausdorff dimension of $2+\frac{\log a}{\log b}$, but this doesn't automatically translate into the epicycle, and isn't consistent with the box-counting dimensions we just computed. This isn't really surprising, the Weierstrass function's graph and our fractal are different in nature. This remains an open question worth exploring.
+ The curve of the original Weierstrass function does have a Hausdorff dimension of $2+\frac{\log a}{\log b}$, but this doesn't automatically translate into the epicycle, and isn't consistent with the box-counting dimensions we just computed. This isn't really surprising, the Weierstrass function's graph and our fractal are different in nature. Our fractal occupies the plane and intersects itself, providing a richer and more complex structure. 
+ 
+ I haven't found a closed formula for the Hausdorff dimension. This remains an open question worth exploring.
 
 # Conclusion
 
