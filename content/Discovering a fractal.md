@@ -113,7 +113,7 @@ $$
 
 An interesting property of epicycles is their symmetry. When the epicycle is the sum of a real cosine and an imaginary sine, the figure is symmetrical with respect to the horizontal axis. Why? On one hand cos is symmetric, meaning that for any $x$, $\cos(-x)=\cos(x)$. On the other hand sin is antisymmetric, meaning that for any $x$, $\sin(-x)=-\sin(x)$. Therefore when tracing the figure the other way around, we simply trace the same figure with its vertical axis (determined by sines) flipped.
 
-This is the bridge we need. Cosine, which appears in the Weierstrass function, is exactly the horizontal coordinate of this circular motion. So the Weierstrass function — a sum of cosines — is really just the horizontal shadow of something rotating in the complex plane. And if we stop projecting down to just the horizontal axis, and instead watch the full 2D motion, we get something richer. We can do the same with the Weierstrass function. We can see it as the real part of a complex function that we'll call $\tilde W$:
+This is the bridge we need. Cosine, which appears in the Weierstrass function, is exactly the horizontal coordinate of this circular motion. So the Weierstrass function, a sum of cosines, is really just the horizontal shadow of something rotating in the complex plane. And if we stop projecting down to just the horizontal axis, and instead watch the full 2D motion, we get something richer. We can do the same with the Weierstrass function. We can see it as the real part of a complex function that we'll call $\tilde W$:
 
 $$
 \tilde W(x)=\sum _{n=0}^{\infty }a^{n}e^{ib^{n}2\pi x}
@@ -224,7 +224,7 @@ Therefore proving central symmetry.
 The axial symmetry follows from two facts together:
 
 - First, $\tilde{W}$ is an epicycle built from cosines (real part) and sines (imaginary part). Since cosine is even and sine is odd, the figure is symmetric with respect to the real axis, aka the horizontal axis.
-	- Second, we just proved the figure has 3-fold rotational symmetry. A figure that has both one axis of symmetry and n-fold rotational symmetry necessarily has n axes of symmetry total, each separated by an angle of $\frac{\pi}{n}$​. Applying this with $n=3$: the horizontal axis of symmetry, combined with rotational symmetry of order 3, generates two further axes of symmetry at angles $\frac{\pi}{3}$​ and $\frac{2\pi}{3}$​ from it. This yields the 3 axes visible in the figure.
+- Second, we just proved the figure has 3-fold rotational symmetry. A figure that has both one axis of symmetry and n-fold rotational symmetry necessarily has n axes of symmetry total, each separated by an angle of $\frac{\pi}{n}$​. Applying this with $n=3$: the horizontal axis of symmetry, combined with rotational symmetry of order 3, generates two further axes of symmetry at angles $\frac{\pi}{3}$​ and $\frac{2\pi}{3}$​ from it. This yields the 3 axes visible in the figure.
 
 The same reasoning can be applied for other values of $b$. For $b=5$, the figure has 4-fold central rotational symmetry and 4 axes of symmetry. In fact, the fractal has $b-1$ fold symmetry, for all integers $b$ greater or equal to 2, and $1-b$ fold symmetry for all integers $b$ less than or equal to -1.
 
@@ -280,7 +280,7 @@ For $b=4$, the computed box-counting dimension is 1.7503. We can run the script 
 
 A few things are worth noticing:
 
-- First, $b=2$ and $b=−2$ both give dimensions close to 1: those fractals are nearly one-dimensional curves, barely filling the plane at all. this is the edge case when $ab=1$. As $∣b∣$ grows, the dimension climbs toward 2, meaning the fractal fills more and more of the plane.
+- First, $b=2$ and $b=−2$ both give dimensions close to 1: those fractals are nearly one-dimensional curves, barely filling the plane at all. this is the edge case when $ab=1$. As $∣b∣$ grows, the dimension climbs towards 2, meaning the fractal fills more and more of the plane.
 - Second, positive and negative values of $b$ with the same absolute value give very similar dimensions. The star shape and the triangle shape are geometrically different, but they fill space at roughly the same rate.
 
  There is a second way of considering dimension: the Hausdorff dimension. It is more formal, but also harder. The figure does show self-similarity, it contains approximate smaller copies of itself at varying scales. However I haven't succeeded in finding patterns consistent enough so far.
