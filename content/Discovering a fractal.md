@@ -284,9 +284,9 @@ A few things are worth noticing:
 - Second, positive and negative values of $b$ with the same absolute value give very similar dimensions. The star shape and the triangle shape are geometrically different, but they fill space at roughly the same rate.
 
  There is a second way of considering dimension: the Hausdorff dimension. It is more formal, but also harder. The figure does show self-similarity, it contains approximate smaller copies of itself at varying scales. However I haven't succeeded in finding patterns consistent enough so far.
- 
+
  The curve of the original Weierstrass function does have a Hausdorff dimension of $2+\frac{\log a}{\log b}$, but this doesn't automatically translate into the epicycle, and isn't consistent with the box-counting dimensions we just computed. This isn't really surprising, the Weierstrass function's graph and our fractal are different in nature. Our fractal occupies the plane and intersects itself, providing a richer and more complex structure. 
- 
+
  I haven't found a closed formula for the Hausdorff dimension. This remains an open question worth exploring.
 
 # Conclusion
