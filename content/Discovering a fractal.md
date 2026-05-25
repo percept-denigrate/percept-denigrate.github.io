@@ -43,6 +43,8 @@ $$
 W(x)=\sum _{n=0}^{\infty }\frac{\cos(4^{n}\pi x)}{2^{n}}
 $$
 
+![[weierstrass_function.png]]
+
 And this function is very special, it is continuous everywhere on $\mathbb{R}$, but differentiable *nowhere*. Now let's prove why this is the case. Continuity and differentiability both behave nicely when building functions from other ones. A finite sum of continuous functions is continuous, and a finite sum of differentiable functions is differentiable. This is also true for products, and even for compositions. This allows us to easily prove many of the usual functions are neatly continuous and differentiable, like polynomials for instance. The subtle property that will play a crucial role is that this property is only automatic for *finite* sums. When we have an infinite sum like with the Weierstrass function, things get trickier.
 
 Looking back at our function's definition, we can look at the different sines it's made up of to understand how the partial sums converge towards the whole function. We know the cosine function is bounded between -1 and 1. For the $a$ and $b$ values we took as an example, that means that every term's absolute value is bounded by $\frac{1}{2^n}$. 
