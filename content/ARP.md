@@ -4,4 +4,4 @@ ARP (address resolution protocol) is a layer 2 protocol to resolve MAC addresses
 - The owner responds his MAC address in unicast
 - The sender saves the association in his ARP cache
 
-The protocol is stateless. Devices trust replies, even if they didn't ask. This can lead to [[ARP cache poisoning]].
+The protocol is stateless. Devices trust replies, even if they didn't ask. This can lead to [[ARP spoofing]].
