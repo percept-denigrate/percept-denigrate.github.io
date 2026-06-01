@@ -1,6 +1,7 @@
 ASLR (address space layout randomisation) is a [[Linux]] feature to prevent [[Buffer overflow]] attacks.
 
 When a process is launched, ASLR randomizes the memory addresses of:
+
 - The executable
 - Libraries
 - The [[Stack]]

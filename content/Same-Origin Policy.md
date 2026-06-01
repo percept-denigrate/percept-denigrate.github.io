@@ -8,7 +8,7 @@ Origins are determined by the `Origin` header and are defined by
 - A port if specified (`:8080`)
 - A host (domain name or IP address)
 
-Enabled by default in most browsers, websites can enforce exceptions with CORS headers
+Enabled by default in most browsers, websites can enforce exceptions with CORS headers:
 
 - `Access-Control-Allow-Origin` 
 - `Access-Control-Allow-Methods`
