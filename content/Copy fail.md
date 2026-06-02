@@ -28,3 +28,7 @@ It operated on a structure composed of:
 The attack uses the decryption mechanism.
 
 During decryption, the AAD and the cyphertext are in a buffer while the static message tag is in a page cache. The AAD and the cyphertext are copied, but the message tag is simply referenced. And since the output is writable (in-place decryption operations), the message tag is writable.
+
+# Shellcode
+
+An [[SUID]] binary (`su`, `passwd`) is loaded in cache. The socket is used to inject shell code opening a shell into the cached binary. When a user runs that binary, the cached copy is executed and he obtains root access.
