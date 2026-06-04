@@ -41,6 +41,7 @@ When the HMAC is computed, it uses:
 - AAD part 2
 
 The payload is inserted in AAD part 2.
+
 # Shellcode
 
 An [[SUID]] binary (`su`, `passwd`) is loaded in cache. The socket is used to inject shell code opening a shell into the cached binary. When a user runs that binary, the cached copy is executed and he obtains root access.
