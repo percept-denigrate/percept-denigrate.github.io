@@ -1,6 +1,6 @@
 The Wilson effect is the observed increase in [[IQ]] [[Heritability]] with age.
 
-Heritability typically stands at 0.2 at 5 years old, and reaches 0.8 in adulthood. From Bouchard[^1]:
+Heritability typically stands at 0.2 at 5 years old, and reaches 0.8 in adulthood. On the other hand shared environment decreases with age. From Bouchard[^1]:
 
 ![[wilson_effect.gif]]
 
