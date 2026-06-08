@@ -11,7 +11,6 @@ This phenomenon mostly comes from:
 
 # Phenotype -> environment
 
-
 [^1]: [Bouchard (2013), *The Wilson Effect: The Increase in Heritability of IQ With Age*](https://pubmed.ncbi.nlm.nih.gov/23919982/)
 
 [^2]: [Beam et al. (2015), *Twin Differentiation of Cognitive Ability Through Phenotype to Environment Transmission: The Louisville Twin Study*](https://pmc.ncbi.nlm.nih.gov/articles/PMC4749447/)
