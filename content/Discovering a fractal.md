@@ -45,7 +45,7 @@ $$
 
 ![[weierstrass_function.png]]
 
-And this function is very special, it is continuous everywhere on $\mathbb{R}$, but differentiable *nowhere*. Now let's prove why this is the case. Continuity and differentiability both behave nicely when building functions from other ones. A finite sum of continuous functions is continuous, and a finite sum of differentiable functions is differentiable. This is also true for products, and even for compositions. This allows us to easily prove many of the usual functions are neatly continuous and differentiable, like polynomials for instance. The subtle property that will play a crucial role is that this property is only automatic for *finite* sums. When we have an infinite sum like with the Weierstrass function, things get trickier.
+And this function is very special, it is continuous everywhere on $\mathbb{R}$, but differentiable *nowhere*. Now let's explain why this is the case. Continuity and differentiability both behave nicely when building functions from other ones. A finite sum of continuous functions is continuous, and a finite sum of differentiable functions is differentiable. This is also true for products, and even for compositions. This allows us to easily prove many of the usual functions are neatly continuous and differentiable, like polynomials for instance. The subtle property that will play a crucial role is that this property is only automatic for *finite* sums. When we have an infinite sum like with the Weierstrass function, things get trickier.
 
 Looking back at our function's definition, we can look at the different sines it's made up of to understand how the partial sums converge towards the whole function. We know the cosine function is bounded between -1 and 1. For the $a$ and $b$ values we took as an example, that means that every term's absolute value is bounded by $\frac{1}{2^n}$. 
 
@@ -77,7 +77,7 @@ $$
 \frac{d}{dx}\left(\frac{\cos(4^n \pi x)}{2^n}\right) = \frac{-4^n \pi \sin(4^n \pi x)}{2^n} = -2^n \pi \sin(4^n \pi x)
 $$
 
-We can see the exponential factor $2^n$ making the terms blow up to infinity if we try computing the derivative. This is visible when we look at the graphs of those sines: although they get smaller in amplitude, their frequencies grow even faster than their amplitudes do.
+We can see the exponential factor $2^n$ making the terms blow up to infinity if we try computing the derivative. This is visible when we look at the graphs of those cosines: although they get smaller in amplitude, their frequencies grow even faster than their amplitudes do.
 
 ![[sines.png]]
 
