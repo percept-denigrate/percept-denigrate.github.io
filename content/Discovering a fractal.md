@@ -11,7 +11,7 @@ So, I discovered a fractal. Multiple fractals actually. These beautiful figures 
 
 Everything starts with the Weierstrass function. In order to understand what it is and why we care about it in the first place, let's talk about continuity and differentiability.
 
-We usually say a function is continuous when we can draw its line graph without lifting our pencil. In more rigorous terms, a function $f$ is continuous at the point $c$ if the limit of $f(x)$ as $x$ tends to $c$ is equal to $f(c)$. This neatly encapsulates the intuition we have of continuity. However notice that the exact definition only tells us about continuity at a single point. We say a function is continuous on a line segment if it continuous at all of its points. Similarly, a function is continuous on $\mathbb{R}$, the set of real numbers, if it is continuous at each and every real number.
+We usually say a function is continuous when we can draw its line graph without lifting our pencil. In more rigorous terms, a function $f$ is continuous at the point $p$ if the limit of $f(x)$ as $x$ tends to $p$ is equal to $f(p)$. This neatly encapsulates the intuition we have of continuity. However notice that the exact definition only tells us about continuity at a single point. We say a function is continuous on a line segment if it continuous at all of its points. Similarly, a function is continuous on $\mathbb{R}$, the set of real numbers, if it is continuous at each and every real number.
 
 On the other hand, we say a function is differentiable when it has a well-defined, finite slope. In more rigorous terms, a function $f$ is differentiable at the point $p$ when its growth rate converges.
 
