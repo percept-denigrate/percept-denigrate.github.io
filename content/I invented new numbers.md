@@ -15,19 +15,19 @@ $$
 
 I can sense that some of you haven’t instantaneously understood, weirdly enough, so let me explain. A sequence is Cauchy if and only if its values become arbitrarily close to each other. For any given distance, there is a certain point from which all the values are closer to each other than the distance. For instance, this
 
-[[1n.png]]
+![[1n.png]]
 
 is a Cauchy sequence, this
 
-[[n.png]]
+![[n.png]]
 
 is not. And this?
 
-[[sqrtn.png]]
+![[sqrtn.png]]
 
 Well, it’s not. Because although consecutive values get closer and closer, *√n* diverges to infinity, so you can’t contain those values in an arbitrarily small zone. And this?
 
-[[sinn.png]]
+![[sinn.png]]
 
 It doesn’t converge so it’s not Cauchy either, for the same reason. It’s not very hard to show that all convergent sequences are Cauchy. And from these examples, it looks like being convergent and Cauchy are the same thing, right? Well yes, but actually no.
 
