@@ -15,23 +15,23 @@ $$
 
 I can sense that some of you haven’t instantaneously understood, weirdly enough, so let me explain. A sequence is Cauchy if and only if its values become arbitrarily close to each other. For any given distance, there is a certain point from which all the values are closer to each other than the distance. For instance, this
 
-1/n
+[[1n.png]]
 
 is a Cauchy sequence, this
 
-n
+[[n.png]]
 
 is not. And this?
 
-sqrt(n)
+[[sqrtn.png]]
 
-Well, it’s not. Because altho consecutive values get closer and closer, sqrt(n) diverges to infinity, so you can’t contain those values in an arbitrarily small zone. And this?
+Well, it’s not. Because although consecutive values get closer and closer, *√n* diverges to infinity, so you can’t contain those values in an arbitrarily small zone. And this?
 
-sin(n)
+[[sinn.png]]
 
 It doesn’t converge so it’s not Cauchy either, for the same reason. It’s not very hard to show that all convergent sequences are Cauchy. And from these examples, it looks like being convergent and Cauchy are the same thing, right? Well yes, but actually no.
 
-These properties look the same, and there’s definitely a sense in which the values of a Cauchy sequence get arbitrarily close to *something*. It’s indeed the same thing in **R**, which we call a *complete* space for that reason. But it’s not the case for all spaces, as a Cauchy sequence can "converge" towards something that is not in the set. A completely random example is **Q**, the set of rational numbers. √2 is a famously irrational number, however its decimal expansion is a Cauchy sequence in **Q** that does not converge in **Q**, but does in **R**. See where we’re going? 
+These properties look the same, and there’s definitely a sense in which the values of a Cauchy sequence get arbitrarily close to *something*. It’s indeed the same thing in **R**, which we call a *complete* space for that reason. But it’s not the case for all spaces, as a Cauchy sequence can "converge" towards something that is not in the set. A completely random example is **Q**, the set of rational numbers. *√2* is a famously irrational number, however its decimal expansion is a Cauchy sequence in **Q** that does not converge in **Q**, but does in **R**. See where we’re going? 
 
 We would like to define **R** by taking the limits of Cauchy sequences on **Q**. But because the limit in **R** can’t be defined before **R** is, we do so by taking the Cauchy sequences and grouping them. We define an equivalent relation ~ such that two sequences are equivalent if their difference is negligible, a nerdy way of saying it converges to 0. 0 being rational, everything works fine. **R** is thus the set of Cauchy sequences in **Q**, quotiented by the relation ~. It can be seen as the set of the limits of all Cauchy sequences in **Q**.
 
@@ -49,7 +49,7 @@ Let's call this set **H**, for hypernumbers. Also, we can call the limit of any 
 
 So we just defined a set. But we would like to call it a space, aka a set with extra properties, such as internal operations. We will do so by extending the properties of real numbers seen as limits of sequences.
 
-The simplest structure we gan give to this set, is that of a vector space, meaning you can add, subtract and multiply any element by a scalar (a real number) and the result is still in **H**. For *a* and *b* in **H** you can just take bounded sequences *(an)* and *(bn)* whose limits are *a* and *b*, *a+b* is the limit of *(an+bn)*. For instance, let's take the limit of *(-1)^n* let’s just call *u*, and *1 = lim 1* which is also a plain old real number, we have 
+The simplest structure we can give to this set, is that of a vector space, meaning you can add, subtract and multiply any element by a scalar (a real number) and the result is still in **H**. For *a* and *b* in **H** you can just take bounded sequences *(a_n)* and *(b_n)* whose limits are *a* and *b*, *a+b* is the limit of *(a_n+b_n)*. For instance, let's take the limit of *(-1)^n* let’s just call *u*, and *1 = lim 1* which is also a plain old real number, we have 
 
 $$
 u+1 = lim (-1)^n+1
@@ -65,7 +65,7 @@ $$
 
 It doesn’t matter which sequence you pick because a scalar times something negligible is still negligible. And the neutral element is 0.
 
-We just made **H** into a vector space, how neat? But we can do more. We can also define a product in the same way. ab is the lim of (an)(bn). But this time it’s a bit trickier to make sure everything works fine regardless of the sequences you pick, so let’s do a proper demonstration. We still have our a and b being the limits of (an) and (bn). Let’s pick any other sequences representing *a* and *b*, that we can write
+We just made **H** into a vector space, how neat? But we can do more. We can also define a product in the same way. *ab* is the limit of *(a_n)(b_n)*. But this time it’s a bit trickier to make sure everything works fine regardless of the sequences you pick, so let’s do a proper demonstration. We still have our *a* and *b* being the limits of *(a_n)* and *(b_n)*. Let’s pick any other sequences representing *a* and *b*, that we can write
 
 $$
 (a_n)+o(1) 
@@ -77,19 +77,19 @@ $$
 (b_n)+o(1)
 $$
 
-With *o(1)* meaning something negligible and try to show that *(an)(bn)* has the same limit as this guy. In that case, we develop the product and get this
+With *o(1)* meaning something negligible, and try to show that *(a_n)(b_n)* has the same limit as this guy. In that case, we develop the product and get this
 
 $$
 (a_n+o(1))(b_n+o(1)) = a_nb_n + a_n o(1) + b_n o(1) + o(1)
 $$
 
-By taking the limit, we see that we’re left with *ab* and those guys, we would really like to converge to 0. But remember when we said that all those sequences are bounded? That’s right, a bounded sequence times a negligible sequence is still negligible. So we’ve just shown that the product between two hypernumbers can be defined without any problem. **H** is then not only a vector space, but an algebra with the identity element being 1, the limit of the sequence *(1)*.
+By taking the limit, we see that we’re left with *ab* and those guys, we would really like to converge to 0. But remember when we said that all those sequences are bounded? That’s right, a bounded sequence times a negligible sequence is still negligible. So we’ve just shown that the product between two hypernumbers can be defined without any problem. **H** is then not only a vector space, but an *algebra* with the identity element being 1, the limit of the sequence *(1)*.
 
 So, can we divide by hypernumbers? Before we answer this question and explore more properties, we need to talk about eigenvalues. Each hypernumber has a set of specific real values that dictate its properties. This stems from the fact that all bounded sequences have what we call *adherent* values. An adherent value of a sequence is a number which a subsequence converges to. For instance, this guy 
 
 (-1)^n
 
-has -1 and 1 as adherent values. And *sin* actually has the whole line segment [-1,1]. Also, because sequences converging to a hypernumber only differ by something that converges to 0, the subsequences have the same limits, so those adherent values are the same. Meaning they only depend on the hypernumber. Those who are familiar with linear algebra might be wondering why I chose to call them eigenvalues, and you will see that they share similar properties to those of matrices. Let’s also call the set of eigenvalues the spectrum, noted *sp*.
+Has -1 and 1 as adherent values. And *sin* actually has the whole line segment [-1,1]. Also, because sequences converging to a hypernumber only differ by something that converges to 0, the subsequences have the same limits, so those adherent values are the same. Meaning they only depend on the hypernumber. Those who are familiar with linear algebra might be wondering why I chose to call them eigenvalues, and you will see that they share similar properties to those of matrices. Let’s also call the set of eigenvalues the spectrum, noted *sp*.
 
 To get back to divisibility in **H**, we can check if a hypernumber is invertible based on its eigenvalues. And just like with matrices, a hypernumber is invertible if and only if 0 is not an eigenvalue of it. That’s because if 0 is en eigenvalue, all associated sequences have a subsequence that converges to 0. So the inverse would need to have sequences with subsequences that go to infinity, and thus not be bounded.
 
@@ -104,7 +104,8 @@ So
 $$
 u^2 -1 = 0
 $$
-And the eigenvalues -1 and 1 of u are indeed zeros of the polynomial *x^2-1*. However not all hypernumbers have such polynomials.
+
+And the eigenvalues -1 and 1 of *u* are indeed zeros of the polynomial *x^2-1*. However not all hypernumbers have such polynomials.
 
 We can also use those eigenvalues to define a norm, aka a distance to zero. The norm of a hypernumber is the greatest absolute value of its eigenvalues. This simple def validates all conditions to be a norm: homogeneity, separation and the triangle inequality.
 
