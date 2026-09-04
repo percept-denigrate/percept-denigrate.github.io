@@ -4,7 +4,7 @@ I will first explain how the real numbers are defined, then use this to build ne
 
 # What are real numbers?
 
-If you’re at least a little used to math, you’ve got a pretty intuitive understanding of what real numbers are. But what’s the definition of these numbers ? Well, it’s not that simple. We know what integers are. We have an easily understandable definition for rational numbers: a rational number is simply an integer divided by a non-zero integer. Even if these integers aren’t coprime, meaning you factor out a number out of them and simplify the fraction, you still got a rational number. And from these rational numbers, we can construct the real numbers which are in a certain way an extension of rational numbers. There are multiple of these definitions, and one of them is with Cauchy sequences.
+If you’re at least a little used to math, you’ve got a pretty intuitive understanding of what real numbers are. But what’s the definition of these numbers? Well, it’s not that simple. We know what integers are. We have an easily understandable definition for rational numbers: a rational number is simply an integer divided by a non-zero integer. Even if these integers aren’t coprime, meaning you factor out a number out of them and simplify the fraction, you still got a rational number. And from these rational numbers, we can construct the real numbers which are in a certain way an extension of rational numbers. There are multiple of these definitions, and one of them is with Cauchy sequences.
 
 The definition of a Cauchy sequence is this: a sequence *(a_n)* is Cauchy when
 
@@ -36,10 +36,10 @@ These properties look the same, and there’s definitely a sense in which the va
 We would like to define **R** by taking the limits of Cauchy sequences on **Q**. But because the limit in **R** can’t be defined before **R** is, we do so by taking the Cauchy sequences and grouping them. We define an equivalent relation ~ such that two sequences are equivalent if their difference is negligible, a nerdy way of saying it converges to 0. 
 
 $$
-(a-n) \sim (a_m) \iff a_n - b_n \rightarrow 0
+(a_n) \sim (a_m) \iff a_n - b_n \rightarrow 0
 $$
 
-0 being rational, everything works fine. **R** is thus the set of Cauchy sequences in **Q**, quotiented by the relation ~. It can be seen as the set of the limits of all Cauchy sequences in **Q**.
+0 being rational, everything works fine. **R** is thus the set of Cauchy sequences in **Q**, quotiented by the relation ~. It behaves like the set of the limits of all Cauchy sequences in **Q**.
 
 # Defining our new numbers
 
@@ -49,7 +49,7 @@ $$
 \mathbb H= \{{\text{bounded sequences in }\mathbb R}\}/\sim
 $$
 
-Let's call this set **H**, for hypernumbers. Also, we can call the limit of any bounded sequence the hypernumber corresponding to the equiv class of the sequence. This is completely legal because it extends the definition of the limit to all bounded sequences, not just convergent ones. **H** can then be seen as the set of the limits of all bounded sequences in **R**.
+Let's call this set **H**, for hypernumbers. Also, we can call the limit of any bounded sequence the hypernumber corresponding to the equivalence class of the sequence. This is completely legal because it extends the definition of the limit to all bounded sequences, not just convergent ones. **H** can then be seen as the set of the limits of all bounded sequences in **R**.
 
 # Properties
 
@@ -58,7 +58,7 @@ So we just defined a set. But we would like to call it a space, aka a set with e
 The simplest structure we can give to this set, is that of a vector space, meaning you can add, subtract and multiply any element by a scalar (a real number) and the result is still in **H**. For *a* and *b* in **H** you can just take bounded sequences *(a_n)* and *(b_n)* whose limits are *a* and *b*, *a+b* is the limit of *(a_n+b_n)*. For instance, let's take the limit of *(-1)^n* let’s just call *u*, and *1 = lim 1* which is also a plain old real number, we have 
 
 $$
-u+1 = lim (-1)^n+1
+u+1 = \lim (-1)^n+1
 $$
 
 And of course it doesn’t matter which sequence you pick, because they only differ by something negligible, so the possible sums will too.
@@ -66,7 +66,7 @@ And of course it doesn’t matter which sequence you pick, because they only dif
 In the same way, we can define scalar multiplication by multiplying the associated sequences. 
 
 $$
-2u = lim 2(-1)^n
+2u = \lim 2(-1)^n
 $$
 
 It doesn’t matter which sequence you pick because a scalar times something negligible is still negligible. And the neutral element is 0.
@@ -91,9 +91,9 @@ $$
 
 By taking the limit, we see that we’re left with *ab* and those guys, we would really like to converge to 0. But remember when we said that all those sequences are bounded? That’s right, a bounded sequence times a negligible sequence is still negligible. So we’ve just shown that the product between two hypernumbers can be defined without any problem. **H** is then not only a vector space, but an *algebra* with the identity element being 1, the limit of the sequence *(1)*.
 
-So, can we divide by hypernumbers? Before we answer this question and explore more properties, we need to talk about eigenvalues. Each hypernumber has a set of specific real values that dictate its properties. This stems from the fact that all bounded sequences have what we call *adherent* values. An adherent value of a sequence is a number which a subsequence converges to. For instance, this guy 
+So, can we divide by hypernumbers? Before we answer this question and explore more properties, we need to talk about eigenvalues. Each hypernumber has a set of specific real values that dictate its properties. This stems from the fact that all bounded sequences have what we call *adherent* values. An adherent value of a sequence is a number which a subsequence converges to. For instance, (-1)^n
 
-(-1)^n
+![[-1n.png]]
 
 Has -1 and 1 as adherent values. And *sin* actually has the whole line segment [-1,1]. Also, because sequences converging to a hypernumber only differ by something that converges to 0, the subsequences have the same limits, so those adherent values are the same. Meaning they only depend on the hypernumber. Those who are familiar with linear algebra might be wondering why I chose to call them eigenvalues, and you will see that they share similar properties to those of matrices. Let’s also call the set of eigenvalues the spectrum, noted *sp*.
 
@@ -113,7 +113,13 @@ $$
 
 And the eigenvalues -1 and 1 of *u* are indeed zeros of the polynomial *x^2-1*. However not all hypernumbers have such polynomials.
 
-We can also use those eigenvalues to define a norm, aka a distance to zero. The norm of a hypernumber is the greatest absolute value of its eigenvalues. This simple definition validates all conditions to be a norm:
+We can also use those eigenvalues to define a norm, aka a distance to zero. The norm of a hypernumber is the greatest absolute value of its eigenvalues.
+
+$$
+||[a_n]|| = \lim \sup |a_n|
+$$
+
+This simple definition validates all conditions to be a norm:
 
 - Homogeneity: for any scalar *lambda* and hypernumber *x*, |lambda x|=|lambda||x|
 - Separation: *|x| = 0* if and only if *x=0*
@@ -123,7 +129,7 @@ And finally, we can define an order. We say that *x* is bigger than *y* if all e
 
 # **H** of other vector spaces
 
-So that’s it for our hypernumbers, which are an extension of the real numbers. But what if we use the same construction on other vector spaces ? Actually, things still work out. You can for instance take **H**(**C**), and end up with the complex hypernumbers. **H**(**C**) still has all properties **H**(**R**) has, except for the partial order thing. But that’s only because complex numbers in general can’t be ordered. You can also build **H** over sets with less properties, like vectors for instance. And of course, the properties of **H**(**E**) depends of those of **E**. Hell, you can build **H** over something that's not even a vector space.
+So that’s it for our hypernumbers, which are an extension of the real numbers. But what if we use the same construction on other vector spaces? Actually, things still work out. You can for instance take **H**(**C**), and end up with the complex hypernumbers. **H**(**C**) still has all properties **H**(**R**) has, except for the partial order thing. But that’s only because complex numbers in general can’t be ordered. You can also build **H** over sets with less properties, like vectors for instance. And of course, the properties of **H**(**E**) depends on those of **E**. Hell, you can build **H** over something that's not even a vector space.
 
 # Conclusion
 
