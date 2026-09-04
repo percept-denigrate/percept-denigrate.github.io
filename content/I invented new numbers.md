@@ -1,10 +1,10 @@
-Today, I will not teach you some already established yet surprising aspect of math, but rather make you discover some of my own thought process, and how I invented quote on quote new numbers. This is not really useful in itself and probably never will be, however I think it is a good illustration of the creative process that has led to actual ground-breaking math discoveries.
+Today, I will not teach you some already established yet surprising aspect of math, but rather make you discover some of my own thought process, and how I invented "new numbers". This is not really useful in itself and probably never will be, however I think it is a good illustration of the creative process that has led to actual ground-breaking math discoveries.
 
 I will first explain how the real numbers are defined, then use this to build new numbers. After that, we will explore some of their properties, and go further by taking a look at how we can do the same thing based on other structures than real numbers. Also, I will not prove every claim I make in this article. I will only focus on the demonstrations that help gain an insight. With that said, let’s jump in.
 
 # What are real numbers?
 
-If you’re at least a little used to math, you’ve got a pretty intuitive understanding of what real numbers are. But what’s the definition of those numbers ? Well, it’s not that simple. We know what integers are. We have an easily understandable definition for rational numbers: a rational number is simply an integer divided by a non-zero integer. Even if these integers aren’t coprime, meaning you factor out a number out of them and simplify the fraction, you still got a rational number. And from these rational numbers, we can define the real numbers which are in a certain way an extension of rational numbers. There are multiple of these definitions, and one of them is with Cauchy sequences.
+If you’re at least a little used to math, you’ve got a pretty intuitive understanding of what real numbers are. But what’s the definition of these numbers ? Well, it’s not that simple. We know what integers are. We have an easily understandable definition for rational numbers: a rational number is simply an integer divided by a non-zero integer. Even if these integers aren’t coprime, meaning you factor out a number out of them and simplify the fraction, you still got a rational number. And from these rational numbers, we can construct the real numbers which are in a certain way an extension of rational numbers. There are multiple of these definitions, and one of them is with Cauchy sequences.
 
 The definition of a Cauchy sequence is this: a sequence *(a_n)* is Cauchy when
 
@@ -13,27 +13,33 @@ $$
 |a_m-a_n|\leq \epsilon
 $$
 
-I can sense that some of you haven’t instantaneously understood, weirdly enough, so let me explain. A sequence is Cauchy if and only if its values become arbitrarily close to each other. For any given distance, there is a certain point from which all the values are closer to each other than the distance. For instance, this
+I can sense that some of you haven’t instantaneously understood, weirdly enough, so let me explain. A sequence is Cauchy if and only if its values become arbitrarily close to each other. For any given distance, there is a certain point from which all values are closer to each other than said distance. For instance, *1/n*
 
 ![[1n.png]]
 
-is a Cauchy sequence, this
+is a Cauchy sequence, *n*
 
 ![[n.png]]
 
-is not. And this?
+is not. And *√n*?
 
 ![[sqrtn.png]]
 
-Well, it’s not. Because although consecutive values get closer and closer, *√n* diverges to infinity, so you can’t contain those values in an arbitrarily small zone. And this?
+Well, it’s not. Because although consecutive values get closer and closer, *√n* diverges to infinity, so you can’t contain those values in an arbitrarily small zone. And *sin(n)*?
 
 ![[sinn.png]]
 
 It doesn’t converge so it’s not Cauchy either, for the same reason. It’s not very hard to show that all convergent sequences are Cauchy. And from these examples, it looks like being convergent and Cauchy are the same thing, right? Well yes, but actually no.
 
-These properties look the same, and there’s definitely a sense in which the values of a Cauchy sequence get arbitrarily close to *something*. It’s indeed the same thing in **R**, which we call a *complete* space for that reason. But it’s not the case for all spaces, as a Cauchy sequence can "converge" towards something that is not in the set. A completely random example is **Q**, the set of rational numbers. *√2* is a famously irrational number, however its decimal expansion is a Cauchy sequence in **Q** that does not converge in **Q**, but does in **R**. See where we’re going? 
+These properties look the same, and there’s definitely a sense in which the values of a Cauchy sequence get arbitrarily close to *something*. It’s indeed the same thing in **R**, which we call a *complete* space for that reason. But it’s not the case for all spaces, as a Cauchy sequence can "converge" towards something that is not in the set. A completely random example is **Q**, the set of rational numbers. *√2* is a famously irrational number, however its decimal expansion (1, 1.4, 1.41, 1.414,...) is a Cauchy sequence in **Q** that does not converge in **Q**, but does in **R**. See where we’re going? 
 
-We would like to define **R** by taking the limits of Cauchy sequences on **Q**. But because the limit in **R** can’t be defined before **R** is, we do so by taking the Cauchy sequences and grouping them. We define an equivalent relation ~ such that two sequences are equivalent if their difference is negligible, a nerdy way of saying it converges to 0. 0 being rational, everything works fine. **R** is thus the set of Cauchy sequences in **Q**, quotiented by the relation ~. It can be seen as the set of the limits of all Cauchy sequences in **Q**.
+We would like to define **R** by taking the limits of Cauchy sequences on **Q**. But because the limit in **R** can’t be defined before **R** is, we do so by taking the Cauchy sequences and grouping them. We define an equivalent relation ~ such that two sequences are equivalent if their difference is negligible, a nerdy way of saying it converges to 0. 
+
+$$
+(a-n) \sim (a_m) \iff a_n - b_n \rightarrow 0
+$$
+
+0 being rational, everything works fine. **R** is thus the set of Cauchy sequences in **Q**, quotiented by the relation ~. It can be seen as the set of the limits of all Cauchy sequences in **Q**.
 
 # Defining our new numbers
 
@@ -91,9 +97,9 @@ So, can we divide by hypernumbers? Before we answer this question and explore mo
 
 Has -1 and 1 as adherent values. And *sin* actually has the whole line segment [-1,1]. Also, because sequences converging to a hypernumber only differ by something that converges to 0, the subsequences have the same limits, so those adherent values are the same. Meaning they only depend on the hypernumber. Those who are familiar with linear algebra might be wondering why I chose to call them eigenvalues, and you will see that they share similar properties to those of matrices. Let’s also call the set of eigenvalues the spectrum, noted *sp*.
 
-To get back to divisibility in **H**, we can check if a hypernumber is invertible based on its eigenvalues. And just like with matrices, a hypernumber is invertible if and only if 0 is not an eigenvalue of it. That’s because if 0 is en eigenvalue, all associated sequences have a subsequence that converges to 0. So the inverse would need to have sequences with subsequences that go to infinity, and thus not be bounded.
+To get back to divisibility in **H**, we can check if a hypernumber is invertible based on its eigenvalues. And just like with matrices, a hypernumber is invertible if and only if 0 is not an eigenvalue of it. That’s because if 0 is an eigenvalue, all associated sequences have a subsequence that converges to 0. So the inverse would need to have sequences with subsequences that go to infinity, and thus not be bounded.
 
-An additional property has to do with polynomials. If a polynomial evaluated on a hypernumber is 0, then the eigenvalues of the hypernumber are contained in the polynomial’s zeros. Note that the opposite isn’t always true, because you can add any non-eigenvalue zero to a polynomial by multiplying it by an other polynomial. For instance,
+An additional property has to do with polynomials. If a polynomial evaluated on a hypernumber is 0, then the eigenvalues of the hypernumber are contained in the polynomial’s zeros. Note that the opposite isn’t always true, because you can add any non-eigenvalue zero to a polynomial by multiplying it by another polynomial. For instance,
 
 $$
 u^2 = 1
@@ -107,9 +113,13 @@ $$
 
 And the eigenvalues -1 and 1 of *u* are indeed zeros of the polynomial *x^2-1*. However not all hypernumbers have such polynomials.
 
-We can also use those eigenvalues to define a norm, aka a distance to zero. The norm of a hypernumber is the greatest absolute value of its eigenvalues. This simple def validates all conditions to be a norm: homogeneity, separation and the triangle inequality.
+We can also use those eigenvalues to define a norm, aka a distance to zero. The norm of a hypernumber is the greatest absolute value of its eigenvalues. This simple definition validates all conditions to be a norm:
 
-And finally, we can define an order. We say that x is bigger than y if all eigenvalues of x are greater than those of y. The only caveat is that this order is partial, meaning that not all hypernumbers can be compared to each other.
+- Homogeneity: for any scalar *lambda* and hypernumber *x*, |lambda x|=|lambda||x|
+- Separation: *|x| = 0* if and only if *x=0*
+- The triangle inequality: *|x+y|<=|x|+|y|*
+
+And finally, we can define an order. We say that *x* is bigger than *y* if all eigenvalues of *x-y* are greater than 0. The only caveat is that this order is partial, meaning that not all hypernumbers can be compared to each other.
 
 # **H** of other vector spaces
 
