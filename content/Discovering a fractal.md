@@ -27,7 +27,7 @@ As a counter-example, we can look at the function $|x|$. It is continuous on $\m
 
 ![[abs.png]]
 
-This example has a single discontinuous point. And if you try to come up with your own counter-examples, you will likely end up with continuous functions with a few undifferentiable points. This begs the question: can a continuous function be not differentiable on a whole line segment, or even on all $\mathbb{R}$? Mathematicians who originally came up with counter-examples like ours thought that no, undifferentiability of continuous functions were localized to some points, that those points couldn't be *everywhere*. However, they were proven wrong by the Weierstrass function.
+This example has a single non-differentiable point. And if you try to come up with your own counter-examples, you will likely end up with continuous functions with a few undifferentiable points. This begs the question: can a continuous function be not differentiable on a whole line segment, or even on all $\mathbb{R}$? Mathematicians who originally came up with counter-examples like ours thought that no, undifferentiability of continuous functions were localized to some points, that those points couldn't be *everywhere*. However, they were proven wrong by the Weierstrass function.
 
 What's this function? It is defined as the sum of infinitely many cosines. The frequency of those cosines grows following $b^n$, and those cosines are weighted following $a^n$.
 
