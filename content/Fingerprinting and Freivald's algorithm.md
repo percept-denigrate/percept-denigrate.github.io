@@ -6,7 +6,7 @@ Example: Alice and Bob live across the country from one another. They each have 
 
 Alice picks a hash function $h$ at random from a small family of hash functions $H$. $h(x)$ is a short fingerprint of $x$ (nearly unique identifier). Bob checks that $h(a)=h(b)$.
 
-Only a hash is transmitted, saving communication.
+Only a hash is transmitted, saving communication  .
 
 # Freivald's algorithm
 
