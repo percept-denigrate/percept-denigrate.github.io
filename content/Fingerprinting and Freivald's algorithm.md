@@ -13,7 +13,7 @@ Only a hash is transmitted, saving communication  .
 We have 2 $n*n$  matrices $A$ and $B$ over $\mathbb F_p$, with $p>n^2$ a prime number. The goal is to verify the product *AB* has been computed, and doing so more efficiently than the costly full matrix multiplication.
 
 - Chose a random $r\in \mathbb F_p$, let $x=(1,r,r^2,..., r^{n-1})$
-- Compute $y=Cx$ and $z=ABx$
+- Compute $y=Cx$ and $z=A(Bx)$
 - Output yes if $y=z$, and no otherwise
 
 The algorithm runs in $O(n ^2)$, saving compute time.
