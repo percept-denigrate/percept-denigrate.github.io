@@ -52,23 +52,3 @@ The previous equation is similar to the $H$ of the sum-check protocol. We need a
 Let $\mathbb F$ be a finite field of size at least $S^4$. The soundness error will be at most $\frac S {|\mathbb F|}\approx\frac1{S^3}$.
 
 We can turn $\Phi$ into an arithmetic circuit $\Psi$  over $\mathbb F$ that computes $g$, by turning AND($y$,$z$) into $yz$ and OR($y$,$z$) into $y+z-yz$. $g$ will have degree at most $S$.
-
-# Application: matrix multiplication
-
-Given two $n\times n$  matrices $A$ and $B$, the goal of MATMULT is to compute the product $C=AB$.
-
-[[Fingerprinting and Freivald's algorithm|Freivald's algorithm]] requires the prover to send the computed matrices, requiring quadratic communication. For large matrices, this can mean terabytes of data.
-
-## Protocol
-
-We interpret $A$, $B$ and $C$ as functions $f_A$, $f_B$ and $f_C$ mapping $\{0,1\}^{\log n}\times\{0,1\}^{\log n}$ to $\mathbb F$ via
-
-$$
-f_A(i_1,...,i_{\log n},j_1,...,j_{\log n})=A_{ij}
-$$
-$\tilde f_A$, $\tilde f_B$ and $\tilde f_C$ are the multilinear extensions of those.
-
-The goal is to evaluate $\tilde f_C$ at any point $(r_1,r_2)\in\mathbb F^{\log n\times\log n}$. The protocol for computing $\tilde f_C(r_1,r_2)$ exploits the representation of the polynomial $\tilde f_C(x,y)$.
-
-We have $\tilde f_C(x,y)=\sum_{b\in\{0,1\}^{\log n}}\tilde f_A(x,b)\tilde f_B(b,y)$
-
