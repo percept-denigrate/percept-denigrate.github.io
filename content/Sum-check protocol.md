@@ -39,7 +39,7 @@ And $V$ checks that $g_{j-1}(r_{j-1})=g_j(0)+g_j(1)$ and that $g_j$ is a univari
 
 A boolean formula over variables $x_1,...,x_n$ is a binary tree with each leaf labeled by a variable $x_i$ or its negation, and each non-leaf node computing the AND or OR of its two children. The size $S$ of the formula is the number of leaves (can be larger than $n$).
 
-Let $\Phi$ be a boolean formula on $n$ variables of size $S$. In the the #SAT problem, the goal is to compute the number of satisfying assignments of $\Phi$, or equivalently
+Let $\Phi$ be a boolean formula on $n$ variables of size $S$. In the the `#SAT` problem, the goal is to compute the number of satisfying assignments of $\Phi$, or equivalently
 
 $$
 \sum_{x\in\{0,1\}^n} \Phi(x)

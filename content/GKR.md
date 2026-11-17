@@ -1,10 +1,10 @@
-The #SAT example is unrealistic because the problem is not **P**. GKR (Goldwasser, Kalai, and Rothblum) is a scaled-down [[Interactive proof]] for **P**, **NC** (solvable by parallel algorithms) or **L** (logarithmic space) problems.
+The  `#SAT` example is unrealistic because the problem is not **P**. GKR (Goldwasser, Kalai, and Rothblum) is a scaled-down [[Interactive proof]] for **P**, **NC** (solvable by parallel algorithms) or **L** (logarithmic space) problems.
 
 # Costs
 
 $V$ and $P$ agree on a log-space uniform arithmetic circuit $C$, the goal is to compute its output gate(s).
 
-Letting $S$ be the size (number of gates) of $C$ and $n$ the number of variables, the prover runs in poly($S$) and can be linear. If $S=2^{O(n)}$, it's much better than the #SAT protocol seen in [[Sum-check protocol]]. The verifier's cost is $O(d\log S)$, growing linearly with the depth $d$ of $C$, but logarithmically with S.
+Letting $S$ be the size (number of gates) of $C$ and $n$ the number of variables, the prover runs in poly($S$) and can be linear. If $S=2^{O(n)}$, it's much better than the  `#SAT` protocol seen in [[Sum-check protocol]]. The verifier's cost is $O(d\log S)$, growing linearly with the depth $d$ of $C$, but logarithmically with S.
 
 # Protocol
 
